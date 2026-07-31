@@ -17,19 +17,23 @@ SITE_DATA_PATH = ROOT / "site" / "papers_data.json"
 
 
 def markdown_for_papers(site_url: str, papers: list[dict]) -> str:
+    max_items = int(os.getenv("FEISHU_MAX_PAPERS", "30"))
     lines = [f"**今日论文更新：{len(papers)} 篇**", ""]
     if site_url:
         lines.append(f"[打开阅读页]({site_url})")
         lines.append("")
-    for paper in papers[:20]:
+    for paper in papers[:max_items]:
         title = paper.get("title") or paper.get("arxiv_id", "")
         abs_url = paper.get("abs_url", "")
         cats = paper.get("categories", "")
+        intro = paper.get("summary_cn", "")
         lines.append(f"- [{title}]({abs_url})")
+        if intro:
+            lines.append(f"  简介：{intro}")
         if cats:
-            lines.append(f"  {cats}")
-    if len(papers) > 20:
-        lines.append(f"- 还有 {len(papers) - 20} 篇，请在阅读页查看。")
+            lines.append(f"  分类：{cats}")
+    if len(papers) > max_items:
+        lines.append(f"- 还有 {len(papers) - max_items} 篇，请在阅读页查看。")
     return "\n".join(lines)
 
 

@@ -26,6 +26,8 @@ DAILY_DIR = SITE_DIR / "daily"
 FEED_PATH = SITE_DIR / "feed.xml"
 ARXIV_API = "https://export.arxiv.org/api/query"
 ATOM_NS = {"a": "http://www.w3.org/2005/Atom"}
+DEFAULT_LLM_BASE_URL = "https://api.openai.com/v1"
+DEFAULT_LLM_MODEL = "gpt-4o-mini"
 
 
 @dataclass(frozen=True)
@@ -170,6 +172,79 @@ def merge_papers(existing: dict[str, dict], fetched: list[dict], config: RunConf
     return papers, new_papers
 
 
+def llm_chat_completion(api_key: str, base_url: str, model: str, prompt: str) -> str:
+    endpoint = base_url.rstrip("/") + "/chat/completions"
+    body = {
+        "model": model,
+        "messages": [
+            {
+                "role": "system",
+                "content": "你是论文阅读助手。请用简洁、准确的中文介绍论文，不要夸大，不要编造摘要中没有的信息。",
+            },
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": 0.2,
+        "max_tokens": 260,
+    }
+    req = urllib.request.Request(
+        endpoint,
+        data=json.dumps(body, ensure_ascii=False).encode("utf-8"),
+        headers={
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json; charset=utf-8",
+        },
+        method="POST",
+    )
+    with urllib.request.urlopen(req, timeout=60) as res:
+        payload = json.loads(res.read().decode("utf-8"))
+    return payload["choices"][0]["message"]["content"].strip()
+
+
+def fallback_chinese_intro(paper: dict) -> str:
+    title = paper.get("title", paper.get("arxiv_id", "这篇论文"))
+    cats = paper.get("categories", "")
+    if cats:
+        return f"这篇论文关注“{title}”，arXiv 分类为 {cats}。详细贡献请查看英文摘要和论文原文。"
+    return f"这篇论文关注“{title}”。详细贡献请查看英文摘要和论文原文。"
+
+
+def enrich_papers_with_chinese_intro(papers: list[dict]) -> None:
+    api_key = os.getenv("LLM_API_KEY", "").strip()
+    base_url = os.getenv("LLM_BASE_URL", DEFAULT_LLM_BASE_URL).strip()
+    model = os.getenv("LLM_MODEL", DEFAULT_LLM_MODEL).strip()
+    max_papers = int(os.getenv("LLM_MAX_PAPERS", "30"))
+
+    targets = [p for p in papers if not p.get("summary_cn")][:max_papers]
+    if not targets:
+        return
+
+    if not api_key:
+        print("LLM_API_KEY is not set; write fallback Chinese intros only.")
+        for paper in targets:
+            paper["summary_cn"] = fallback_chinese_intro(paper)
+        return
+
+    for index, paper in enumerate(targets, start=1):
+        prompt = (
+            "请根据下面的 arXiv 论文信息，生成中文简介。\n"
+            "要求：\n"
+            "1. 用 1-2 句话说明论文要解决什么问题、用了什么方法或有什么贡献。\n"
+            "2. 保留必要英文术语，例如 Gaussian Splatting、panorama、3D editing。\n"
+            "3. 不要超过 120 个中文字符。\n\n"
+            f"标题：{paper.get('title', '')}\n"
+            f"作者：{paper.get('authors', '')}\n"
+            f"分类：{paper.get('categories', '')}\n"
+            f"英文摘要：{paper.get('abstract', '')}\n"
+        )
+        try:
+            paper["summary_cn"] = llm_chat_completion(api_key, base_url, model, prompt)
+            print(f"Generated Chinese intro {index}/{len(targets)}: {paper.get('arxiv_id')}")
+            time.sleep(0.5)
+        except Exception as exc:
+            paper["summary_cn"] = fallback_chinese_intro(paper)
+            print(f"[WARN] Failed to generate Chinese intro for {paper.get('arxiv_id')}: {exc}")
+
+
 def write_json(path: Path, payload: dict) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -252,6 +327,7 @@ def main() -> None:
         fetched.extend(fetch_query(query, config))
 
     papers, new_papers = merge_papers(load_existing(), fetched, config)
+    enrich_papers_with_chinese_intro(new_papers)
     payload = build_payload(papers, new_papers, config)
     write_json(DATA_PATH, {"papers": papers})
     write_json(SITE_DATA_PATH, payload)

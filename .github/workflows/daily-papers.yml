@@ -34,6 +34,10 @@ jobs:
           MAX_RESULTS: ${{ github.event.inputs.max_results || '50' }}
           DAYS_LOOKBACK: "3"
           SITE_TIMEZONE: "Asia/Shanghai"
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ vars.LLM_BASE_URL }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          LLM_MAX_PAPERS: ${{ vars.LLM_MAX_PAPERS || '30' }}
         run: python3 scripts/fetch_papers.py
 
       - name: Commit updated paper data
@@ -46,6 +50,7 @@ jobs:
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           SITE_URL: ${{ vars.SITE_URL }}
+          FEISHU_MAX_PAPERS: ${{ vars.FEISHU_MAX_PAPERS || '30' }}
         run: python3 scripts/send_feishu.py
 
       - name: Configure Pages
