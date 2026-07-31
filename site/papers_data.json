@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T01:26:26+08:00",
+  "generated_at": "2026-08-01T01:38:13+08:00",
   "timezone": "Asia/Shanghai",
   "count": 35,
   "new_count": 0,
@@ -22,7 +22,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28581",
       "pdf_url": "https://arxiv.org/pdf/2607.28581v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "ROAD旨在降低高保真3D生成的训练成本，将3D基础模型的判别语义与结构先验迁移至diffusion transformer。通过 reciprocal-objective alignment 对齐语义与几何细节，仅用1.5%训练数据达到有竞争力的生成效果，推理时无需基础模型。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -41,7 +41,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28442",
       "pdf_url": "https://arxiv.org/pdf/2607.28442v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "ViewMind3D针对3D-QA中的高标注成本问题，提出training-free模块化框架，通过多视角选择、视觉定位、BEV空间编码和角色化推理完成3D空间问答。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -60,7 +60,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28320",
       "pdf_url": "https://arxiv.org/pdf/2607.28320v1",
       "source_query": "cat:cs.CV+AND+all:Gaussian+AND+all:rendering",
-      "summary_cn": "",
+      "summary_cn": "针对单目UAV视频动态城市场景中时空异质性导致的重影与细节模糊，论文提出AdaAnchor4D。通过ACFA、DLGD和DACW自适应聚合时空特征，实现高质量、实时的4D重建。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -79,7 +79,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28300",
       "pdf_url": "https://arxiv.org/pdf/2607.28300v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "MonoVoc面向单目视频的开放词汇3D场景理解，提出无需训练的流程，将几何重建与语义整合解耦。通过对象级语义Gaussian Splatting，实现可检索地图，并显著降低内存开销。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -98,7 +98,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28292",
       "pdf_url": "https://arxiv.org/pdf/2607.28292v1",
       "source_query": "all:quantization+AND+all:large+AND+all:language+AND+all:model",
-      "summary_cn": "",
+      "summary_cn": "论文针对4-bit量化LLM连续更新金融知识时易灾难性遗忘的问题，提出CACHE-UK。该方法结合rank-1 LoRA、领域优先模块与闭环Stability Controller，使知识退化降低11–17%，但泛化率仍仅28%。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -117,7 +117,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28261",
       "pdf_url": "https://arxiv.org/pdf/2607.28261v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "TARS提出无需显式3D先验或成对视频的3D-free video re-shooting方法，通过文本控制镜头尺度、视角及人称视角。基于高噪声阶段的timestep敏感性分析，采用自监督学习实现稳健的相机控制和未见区域合成。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -136,7 +136,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28243",
       "pdf_url": "https://arxiv.org/pdf/2607.28243v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "针对具身AI第一视角操作数据稀缺且采集成本高，EgoGenesis基于预训练视频生成模型，引入OAPM与Action-3D RoPE，生成可控、高质量的操作视频。合成数据提升了真实机器人任务的泛化成功率。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -155,7 +155,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28164",
       "pdf_url": "https://arxiv.org/pdf/2607.28164v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "S-Avatar旨在从单张图像生成具备新视角一致性的写实3D头部avatar。方法结合diffusion-guided 3D Gaussian Splatting、FLAME对齐与绑定模板，实现实时驱动和表情生成。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -174,7 +174,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28132",
       "pdf_url": "https://arxiv.org/pdf/2607.28132v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文提出 Convolutional Neural Shading（CNS），利用卷积神经着色器从多视图图像重建高质量3D形状，改善暗部和无纹理区域的局部几何细节。另设细节位移网络，减少图像边界表面不规则。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -193,7 +193,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28049",
       "pdf_url": "https://arxiv.org/pdf/2607.28049v1",
       "source_query": "cat:cs.CV+AND+all:Gaussian+AND+all:Splatting",
-      "summary_cn": "",
+      "summary_cn": "论文提出 TSOG，一种面向 4D Gaussian Splatting 的时空有序高斯压缩格式，扩展 SOG 并引入时间属性。实验显示文件大小减少超90%，PSNR变化仅-0.42至+0.85 dB。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -212,7 +212,7 @@
       "abs_url": "https://arxiv.org/abs/2607.28032",
       "pdf_url": "https://arxiv.org/pdf/2607.28032v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文提出SpiD，一种基于Gaussian Splatting的单图像可驱动头部avatar框架，通过双轴解耦实现内部驱动，并以三分支建模不同面部区域，兼顾表现力与实时推理速度。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -231,7 +231,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27944",
       "pdf_url": "https://arxiv.org/pdf/2607.27944v1",
       "source_query": "all:quantization+AND+all:large+AND+all:language+AND+all:model",
-      "summary_cn": "",
+      "summary_cn": "针对Semantic ID语义纠缠、碰撞高且缺乏可解释性的问题，论文提出LGRID，通过LLM驱动的解耦、对齐与双流残差量化生成可解释SID，提升本地生活服务推荐效果。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -250,7 +250,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27865",
       "pdf_url": "https://arxiv.org/pdf/2607.27865v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对无人机远距离理解人体动作与意图时数据稀缺问题，提出Drones2BodyLanguage数据集，将表达10种意图的avatar以几何准确位姿置入4K无人机实景。方法结合语义锚点、单目深度与刚性不变放置，提升多类动作识别效果。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -269,7 +269,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27749",
       "pdf_url": "https://arxiv.org/pdf/2607.27749v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对仅从单一闭合静止状态重建可动物体的难题，提出rest-state框架，以显式mesh融合视觉语言与分割结果。借助video diffusion生成运动假设，并通过几何一致性估计关节参数，实现合理的部件分解与运动结构重建。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -288,7 +288,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27729",
       "pdf_url": "https://arxiv.org/pdf/2607.27729v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文提出 PrintAnything，从3D点云直接生成可执行的3D打印G-code，避免网格重建及其几何伪影。方法通过分层点投影和G-plan map统一表示几何与挤出信息，实现无网格切片路径生成。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -307,7 +307,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27634",
       "pdf_url": "https://arxiv.org/pdf/2607.27634v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "4DHumanDiff提出直接从文本生成4D Gaussian Splatting动态人体，避免视频预生成与逐场景重建。结合时序注意力、6万对数据集、2D正则化和免训练4D插值，实现一致的360度视图与平滑运动。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -326,7 +326,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27592",
       "pdf_url": "https://arxiv.org/pdf/2607.27592v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "MeshFM提出高效前馈框架，将视觉基础模型的2D features蒸馏至3D形状。无需3D标注或推理优化，即可支持part segmentation、dense correspondence和mesh deformation，并适应极端旋转。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -345,7 +345,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27558",
       "pdf_url": "https://arxiv.org/pdf/2607.27558v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "针对栅格化2D CAD图纸难以恢复参数化CAD序列、尺寸标注与几何信息关联不足的问题，提出Drawing-Recode。该框架结合图像编码器、文字识别、cross-attention与Annotation Grounding Loss，由LLM生成SPCC格式CAD代码。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -364,7 +364,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27537",
       "pdf_url": "https://arxiv.org/pdf/2607.27537v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "ProgFormer旨在预测纵向脑MRI未来结构，兼顾稳定的全局结构与细微的疾病进展。该方法采用分层体素空间Diffusion Transformer，通过粗到细路径和conditional flow matching直接生成预测影像。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -383,7 +383,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27065",
       "pdf_url": "https://arxiv.org/pdf/2607.27065v2",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "针对工业表面划痕检测中真实标注数据稀缺问题，论文基于 BlenderProc 提出可配置的程序化渲染管线，生成带 COCO 标注的大规模合成数据。实验表明，合成数据预训练后微调优于仅用真实数据，并能提升数据稀缺条件下的检测性能。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -402,7 +402,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27378",
       "pdf_url": "https://arxiv.org/pdf/2607.27378v1",
       "source_query": "cat:cs.CV+AND+all:panoramic",
-      "summary_cn": "",
+      "summary_cn": "论文提出PanDent牙科全景片（OPG）基准，含9,524份经专家验证的牙齿级标注及对应报告，用于评估MLLMs的结构-语言一致性。实验显示其可提升模型的病灶定位与诊断准确性。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -421,7 +421,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27145",
       "pdf_url": "https://arxiv.org/pdf/2607.27145v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对多模态大模型空间理解不足、物体幻觉及判断不可审计问题，提出免训练的 ByDeWay-V2。该方法结合单目深度与 YOLO-World-L 的对象间几何关系，将可读空间谓词注入提示词，提升空间推理与可解释性。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -440,7 +440,7 @@
       "abs_url": "https://arxiv.org/abs/2607.27139",
       "pdf_url": "https://arxiv.org/pdf/2607.27139v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文提出SeasonStereo，解决不同季节与光照下多时相卫星影像的稠密立体匹配与3D重建问题。方法利用可控季节变化的合成影像对训练，并引入foundation models的零样本几何先验，无需真实配准影像或LiDAR标注。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -459,7 +459,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26910",
       "pdf_url": "https://arxiv.org/pdf/2607.26910v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "CinemaTraj解决从自然语言生成3D场景电影化相机轨迹的问题。它结合RGB-D、3D场景图与LLM Agent，将描述分解为原子运镜并生成可避碰轨迹及同步旁白字幕。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -478,7 +478,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26889",
       "pdf_url": "https://arxiv.org/pdf/2607.26889v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对可动部件物体重建中几何、外观与运动难以解耦的问题，提出StructureGS。该方法将结构感知约束融入3D Gaussian Splatting，通过部件定向包围盒增强空间紧致性与结构连接性，实现清晰、合理的部件重建。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -497,7 +497,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26829",
       "pdf_url": "https://arxiv.org/pdf/2607.26829v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "针对3D医学图像分割中稠密多尺度特征导致显存和推理开销高的问题，BATS通过Boundary-Aware Token Selection在边界等区域保留细粒度token、其余区域采用粗粒度表示。实验显示其精度接近强基线，并显著降低显存占用。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -516,7 +516,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26769",
       "pdf_url": "https://arxiv.org/pdf/2607.26769v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文提出 See2Think 评估框架，通过 See2ThinkBench 和 VAoT 检验多模态模型是否依赖中间视觉状态。实验发现，视觉渲染是主要瓶颈，受干扰反馈可使准确率下降超10个百分点。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -535,7 +535,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26763",
       "pdf_url": "https://arxiv.org/pdf/2607.26763v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对长尾分布下3D点云数据集蒸馏问题，提出Adaptive Synthetic Budgeting与3D Long-Tailed Distribution Matching。方法结合全局-局部特征对齐和先验感知监督，在ShapeNet55上提升分类准确率7.0个百分点。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -554,7 +554,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26646",
       "pdf_url": "https://arxiv.org/pdf/2607.26646v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文提出 Genie Sim PanoWorld，通过轨迹可控的全景视频生成与前馈 3D Gaussian Splatting 重建，从单张360° panorama生成可自由导航的高保真3D场景，支持实时漫游与仿真应用。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
@@ -573,7 +573,7 @@
       "abs_url": "https://arxiv.org/abs/2607.26595",
       "pdf_url": "https://arxiv.org/pdf/2607.26595v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对3D Gaussian Splatting场景质量评估难以兼顾视图感知、空间结构与跨视角一致性的问题，提出融合VGGT质量表征与Qwen-based MLLM的多模态框架，联合图像、深度、点云渲染和相机参数进行评估。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
       "last_seen_date": "2026-08-01"
