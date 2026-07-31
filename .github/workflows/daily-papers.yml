@@ -29,9 +29,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Fetch arXiv papers
         env:
           MAX_RESULTS: ${{ github.event.inputs.max_results || '50' }}
@@ -50,6 +47,9 @@ jobs:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           SITE_URL: ${{ vars.SITE_URL }}
         run: python3 scripts/send_feishu.py
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
