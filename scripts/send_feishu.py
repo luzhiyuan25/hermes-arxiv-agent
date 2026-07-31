@@ -37,6 +37,33 @@ def markdown_for_papers(site_url: str, papers: list[dict]) -> str:
     return "\n".join(lines)
 
 
+def choose_papers_to_send(payload: dict) -> list[dict]:
+    new_papers = payload.get("new_papers", [])
+    if new_papers:
+        return new_papers
+
+    crawled_date = payload.get("crawled_date_max", "")
+    if not crawled_date:
+        return []
+    return [
+        paper
+        for paper in payload.get("papers", [])
+        if paper.get("crawled_date") == crawled_date
+    ]
+
+
+def validate_feishu_response(raw: str) -> None:
+    try:
+        payload = json.loads(raw)
+    except json.JSONDecodeError:
+        return
+
+    code = payload.get("code", payload.get("StatusCode", payload.get("status_code", 0)))
+    if code not in (0, "0", None):
+        message = payload.get("msg") or payload.get("message") or payload.get("StatusMessage") or raw
+        raise RuntimeError(f"Feishu webhook rejected the message: code={code}, message={message}")
+
+
 def main() -> None:
     webhook = os.getenv("FEISHU_WEBHOOK", "").strip()
     if not webhook:
@@ -44,8 +71,8 @@ def main() -> None:
         return
 
     payload = json.loads(SITE_DATA_PATH.read_text(encoding="utf-8"))
-    new_papers = payload.get("new_papers", [])
-    if not new_papers:
+    papers_to_send = choose_papers_to_send(payload)
+    if not papers_to_send:
         print("No new papers; skip notification.")
         return
 
@@ -61,7 +88,7 @@ def main() -> None:
             "elements": [
                 {
                     "tag": "markdown",
-                    "content": markdown_for_papers(site_url, new_papers),
+                    "content": markdown_for_papers(site_url, papers_to_send),
                 }
             ],
         },
@@ -83,7 +110,9 @@ def main() -> None:
         method="POST",
     )
     with urllib.request.urlopen(req, timeout=30) as res:
-        print(res.read().decode("utf-8", errors="replace"))
+        raw = res.read().decode("utf-8", errors="replace")
+        validate_feishu_response(raw)
+        print(raw)
 
 
 if __name__ == "__main__":

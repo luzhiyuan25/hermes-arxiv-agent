@@ -219,9 +219,7 @@ def enrich_papers_with_chinese_intro(papers: list[dict]) -> None:
         return
 
     if not api_key:
-        print("LLM_API_KEY is not set; write fallback Chinese intros only.")
-        for paper in targets:
-            paper["summary_cn"] = fallback_chinese_intro(paper)
+        print("LLM_API_KEY is not set; skip Chinese intro generation.")
         return
 
     for index, paper in enumerate(targets, start=1):
@@ -327,7 +325,7 @@ def main() -> None:
         fetched.extend(fetch_query(query, config))
 
     papers, new_papers = merge_papers(load_existing(), fetched, config)
-    enrich_papers_with_chinese_intro(new_papers)
+    enrich_papers_with_chinese_intro(papers)
     payload = build_payload(papers, new_papers, config)
     write_json(DATA_PATH, {"papers": papers})
     write_json(SITE_DATA_PATH, payload)
