@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Papers</title>
+  <meta name="theme-color" content="#f8fafc">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate" type="application/rss+xml" title="Daily Papers RSS" href="feed.xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="masthead">
+    <div class="brand">
+      <img src="favicon.svg" alt="" width="42" height="42">
+      <div>
+        <h1>Daily Papers</h1>
+        <p id="metaText">加载中...</p>
+      </div>
+    </div>
+    <a class="rss-link" href="feed.xml">RSS</a>
+  </header>
+
+  <main class="shell">
+    <section class="toolbar" aria-label="筛选">
+      <label class="field">
+        <span>日期维度</span>
+        <select id="dateMode">
+          <option value="published_date">发表日期</option>
+          <option value="crawled_date">抓取日期</option>
+        </select>
+      </label>
+
+      <label class="field">
+        <span>开始日期</span>
+        <input id="startDate" type="date">
+      </label>
+
+      <label class="field">
+        <span>结束日期</span>
+        <input id="endDate" type="date">
+      </label>
+
+      <label class="field search">
+        <span>关键词</span>
+        <input id="keyword" type="search" placeholder="标题、作者、摘要、分类">
+      </label>
+
+      <label class="field">
+        <span>分类</span>
+        <select id="category">
+          <option value="">全部</option>
+        </select>
+      </label>
+
+      <label class="check">
+        <input id="newOnly" type="checkbox">
+        <span>只看今日新增</span>
+      </label>
+
+      <label class="check">
+        <input id="favoriteOnly" type="checkbox">
+        <span>只看收藏</span>
+      </label>
+
+      <div class="buttons">
+        <button id="applyBtn" type="button">筛选</button>
+        <button id="resetBtn" type="button">重置</button>
+      </div>
+    </section>
+
+    <section class="stats" id="stats"></section>
+    <section class="papers" id="papers"></section>
+  </main>
+
+  <template id="paperTemplate">
+    <article class="paper">
+      <div class="paper-top">
+        <span class="id"></span>
+        <button class="favorite" type="button" title="收藏"></button>
+      </div>
+      <h2><a class="title" target="_blank" rel="noopener noreferrer"></a></h2>
+      <p class="authors"></p>
+      <div class="tags"></div>
+      <p class="abstract"></p>
+      <div class="links">
+        <a class="abs" target="_blank" rel="noopener noreferrer">Abs</a>
+        <a class="pdf" target="_blank" rel="noopener noreferrer">PDF</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

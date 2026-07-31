@@ -1,0 +1,15 @@
+# One arXiv API search query per line. Lines beginning with # are ignored.
+# 3D vision / 3D generation / 3D editing
+cat:cs.CV+AND+all:3D+AND+all:vision
+cat:cs.CV+AND+all:3D+AND+all:editing
+cat:cs.CV+AND+all:3D+AND+all:generation
+
+# Gaussian Splatting / Gaussian editing / Gaussian rendering
+cat:cs.CV+AND+all:Gaussian+AND+all:Splatting
+cat:cs.CV+AND+all:Gaussian+AND+all:editing
+cat:cs.CV+AND+all:Gaussian+AND+all:rendering
+
+# Panorama / panoramic images / omnidirectional vision
+cat:cs.CV+AND+all:panorama
+cat:cs.CV+AND+all:panoramic
+cat:cs.CV+AND+all:omnidirectional

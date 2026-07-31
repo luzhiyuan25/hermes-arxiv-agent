@@ -1,0 +1,61 @@
+name: Daily Papers
+
+on:
+  schedule:
+    - cron: "10 23 * * *"
+  workflow_dispatch:
+    inputs:
+      max_results:
+        description: "Max arXiv results per query"
+        required: false
+        default: "50"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily-papers
+  cancel-in-progress: false
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Fetch arXiv papers
+        env:
+          MAX_RESULTS: ${{ github.event.inputs.max_results || '50' }}
+          DAYS_LOOKBACK: "3"
+          SITE_TIMEZONE: "Asia/Shanghai"
+        run: python3 scripts/fetch_papers.py
+
+      - name: Commit updated paper data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update daily papers"
+          file_pattern: "data/papers.json site/papers_data.json site/daily/*.json site/feed.xml"
+
+      - name: Send Feishu notification
+        env:
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          SITE_URL: ${{ vars.SITE_URL }}
+        run: python3 scripts/send_feishu.py
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
