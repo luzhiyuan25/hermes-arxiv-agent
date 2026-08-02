@@ -40,18 +40,18 @@ jobs:
           LLM_MAX_PAPERS: ${{ vars.LLM_MAX_PAPERS || '30' }}
         run: python3 scripts/fetch_papers.py
 
-      - name: Commit updated paper data
-        uses: stefanzweifel/git-auto-commit-action@v5
-        with:
-          commit_message: "chore: update daily papers"
-          file_pattern: "data/papers.json site/papers_data.json site/daily/*.json site/feed.xml"
-
       - name: Send Feishu notification
         env:
           FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
           SITE_URL: ${{ vars.SITE_URL }}
           FEISHU_MAX_PAPERS: ${{ vars.FEISHU_MAX_PAPERS || '30' }}
         run: python3 scripts/send_feishu.py
+
+      - name: Commit updated paper data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update daily papers"
+          file_pattern: "data/papers.json data/notified_ids.json site/papers_data.json site/daily/*.json site/feed.xml"
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

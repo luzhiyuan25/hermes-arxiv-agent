@@ -3,11 +3,41 @@
 cat:cs.CV+AND+all:3D+AND+all:vision
 cat:cs.CV+AND+all:3D+AND+all:editing
 cat:cs.CV+AND+all:3D+AND+all:generation
+cat:cs.CV+AND+all:3D+AND+all:reconstruction
+cat:cs.CV+AND+all:3D+AND+all:layout
+cat:cs.CV+AND+all:scene+AND+all:layout
+cat:cs.CV+AND+all:indoor+AND+all:layout
+cat:cs.CV+AND+all:indoor+AND+all:layout+AND+all:generation
+cat:cs.CV+AND+all:indoor+AND+all:scene
+cat:cs.CV+AND+all:room+AND+all:layout
+
+# Feed-forward 3D / feed-forward Gaussian methods
+cat:cs.CV+AND+all:feed+AND+all:forward+AND+all:3D
+cat:cs.CV+AND+all:feedforward+AND+all:3D
+cat:cs.CV+AND+all:feed+AND+all:forward+AND+all:Gaussian
+cat:cs.CV+AND+all:feedforward+AND+all:Gaussian
 
 # Gaussian Splatting / Gaussian editing / Gaussian rendering
 cat:cs.CV+AND+all:Gaussian+AND+all:Splatting
 cat:cs.CV+AND+all:Gaussian+AND+all:editing
 cat:cs.CV+AND+all:Gaussian+AND+all:rendering
+cat:cs.CV+AND+all:Gaussian+AND+all:reconstruction
+cat:cs.CV+AND+all:3DGS
+cat:cs.GR+AND+all:Gaussian+AND+all:Splatting
+cat:cs.GR+AND+all:Gaussian+AND+all:rendering
+
+# Physical constraints / physics-aware 3D generation
+cat:cs.CV+AND+all:physical+AND+all:constraint
+cat:cs.CV+AND+all:physics+AND+all:constraint
+cat:cs.CV+AND+all:physics-aware+AND+all:3D
+cat:cs.CV+AND+all:physically+AND+all:plausible
+
+# VLM-driven 3D generation / editing
+cat:cs.CV+AND+all:VLM+AND+all:3D+AND+all:generation
+cat:cs.CV+AND+all:VLM+AND+all:3D+AND+all:editing
+cat:cs.CV+AND+all:vision-language+AND+all:3D
+cat:cs.CV+AND+all:multimodal+AND+all:3D+AND+all:generation
+cat:cs.CV+AND+all:multimodal+AND+all:3D+AND+all:editing
 
 # Panorama / panoramic images / omnidirectional vision
 cat:cs.CV+AND+all:panorama

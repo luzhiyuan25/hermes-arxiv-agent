@@ -6,6 +6,7 @@
 
 - 每天按 `config/keywords.txt` 检索 arXiv
 - 自动合并历史论文到 `data/papers.json`
+- 维护 `data/notified_ids.json`，已成功推送过的 arXiv ID 不会再次推送
 - 生成 `site/papers_data.json`、每日增量 JSON 和 RSS
 - 部署 `site/` 到 GitHub Pages
 - 可选：配置 `FEISHU_WEBHOOK` 后向飞书/Lark 机器人推送当天新增论文
@@ -28,6 +29,8 @@ cat:cs.CL+AND+all:large+AND+all:language+AND+all:model
 cat:cs.AI+AND+all:agent
 ```
 
+当前默认关键词覆盖三维重建、三维编辑、三维生成、Gaussian Splatting、前馈高斯、室内布局生成、物理约束、VLM 驱动三维生成/编辑、全景图和 omnidirectional vision。要扩展方向，继续往 `config/keywords.txt` 增加 arXiv 查询即可。
+
 ## 可选飞书推送
 
 在仓库 `Settings -> Secrets and variables -> Actions` 中配置：
@@ -42,7 +45,11 @@ cat:cs.AI+AND+all:agent
 - Variable: `FEISHU_MAX_PAPERS`，可选；默认飞书卡片最多展示 30 篇，超过后提示到阅读页查看
 
 不配置 `FEISHU_WEBHOOK` 时，workflow 会跳过通知，只更新 GitHub Pages。
-不配置 `LLM_API_KEY` 时，workflow 会写入一个很短的中文占位简介，但不会真正翻译/总结英文摘要。
+不配置 `LLM_API_KEY` 时，workflow 会跳过中文简介生成。
+
+## 去重说明
+
+飞书推送只发送 `new_papers` 中尚未出现在 `data/notified_ids.json` 的论文。只有飞书 webhook 返回成功后，脚本才会把这些 arXiv ID 写入 `data/notified_ids.json` 并提交到仓库。这样同一篇论文即使后续 workflow 手动重跑、定时重跑，或被多个关键词命中，也不会重复推送。
 
 ## 本地预览
 

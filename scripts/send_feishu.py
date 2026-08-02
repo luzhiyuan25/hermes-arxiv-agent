@@ -14,6 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE_DATA_PATH = ROOT / "site" / "papers_data.json"
+NOTIFIED_IDS_PATH = ROOT / "data" / "notified_ids.json"
 
 
 def markdown_for_papers(site_url: str, papers: list[dict]) -> str:
@@ -37,18 +38,27 @@ def markdown_for_papers(site_url: str, papers: list[dict]) -> str:
     return "\n".join(lines)
 
 
-def choose_papers_to_send(payload: dict) -> list[dict]:
-    new_papers = payload.get("new_papers", [])
-    if new_papers:
-        return new_papers
+def load_notified_ids() -> set[str]:
+    if not NOTIFIED_IDS_PATH.exists():
+        return set()
+    payload = json.loads(NOTIFIED_IDS_PATH.read_text(encoding="utf-8"))
+    ids = payload.get("notified_ids", [])
+    return {str(arxiv_id) for arxiv_id in ids if arxiv_id}
 
-    crawled_date = payload.get("crawled_date_max", "")
-    if not crawled_date:
-        return []
+
+def save_notified_ids(notified_ids: set[str]) -> None:
+    NOTIFIED_IDS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    NOTIFIED_IDS_PATH.write_text(
+        json.dumps({"notified_ids": sorted(notified_ids)}, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def choose_papers_to_send(payload: dict, notified_ids: set[str]) -> list[dict]:
     return [
         paper
-        for paper in payload.get("papers", [])
-        if paper.get("crawled_date") == crawled_date
+        for paper in payload.get("new_papers", [])
+        if paper.get("arxiv_id") and str(paper.get("arxiv_id")) not in notified_ids
     ]
 
 
@@ -71,9 +81,10 @@ def main() -> None:
         return
 
     payload = json.loads(SITE_DATA_PATH.read_text(encoding="utf-8"))
-    papers_to_send = choose_papers_to_send(payload)
+    notified_ids = load_notified_ids()
+    papers_to_send = choose_papers_to_send(payload, notified_ids)
     if not papers_to_send:
-        print("No new papers; skip notification.")
+        print("No unnotified new papers; skip notification.")
         return
 
     site_url = os.getenv("SITE_URL", "").strip()
@@ -113,6 +124,8 @@ def main() -> None:
         raw = res.read().decode("utf-8", errors="replace")
         validate_feishu_response(raw)
         print(raw)
+    notified_ids.update(str(paper["arxiv_id"]) for paper in papers_to_send if paper.get("arxiv_id"))
+    save_notified_ids(notified_ids)
 
 
 if __name__ == "__main__":
