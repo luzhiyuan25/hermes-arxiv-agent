@@ -17,7 +17,7 @@
       "summary_cn": "ROAD旨在降低高保真3D生成的训练成本，将3D基础模型的判别语义与结构先验迁移至diffusion transformer。通过 reciprocal-objective alignment 对齐语义与几何细节，仅用1.5%训练数据达到有竞争力的生成效果，推理时无需基础模型。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28442",
@@ -36,7 +36,7 @@
       "summary_cn": "ViewMind3D针对3D-QA中的高标注成本问题，提出training-free模块化框架，通过多视角选择、视觉定位、BEV空间编码和角色化推理完成3D空间问答。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28320",
@@ -55,7 +55,7 @@
       "summary_cn": "针对单目UAV视频动态城市场景中时空异质性导致的重影与细节模糊，论文提出AdaAnchor4D。通过ACFA、DLGD和DACW自适应聚合时空特征，实现高质量、实时的4D重建。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28300",
@@ -74,7 +74,7 @@
       "summary_cn": "MonoVoc面向单目视频的开放词汇3D场景理解，提出无需训练的流程，将几何重建与语义整合解耦。通过对象级语义Gaussian Splatting，实现可检索地图，并显著降低内存开销。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28292",
@@ -112,7 +112,7 @@
       "summary_cn": "TARS提出无需显式3D先验或成对视频的3D-free video re-shooting方法，通过文本控制镜头尺度、视角及人称视角。基于高噪声阶段的timestep敏感性分析，采用自监督学习实现稳健的相机控制和未见区域合成。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28243",
@@ -131,7 +131,7 @@
       "summary_cn": "针对具身AI第一视角操作数据稀缺且采集成本高，EgoGenesis基于预训练视频生成模型，引入OAPM与Action-3D RoPE，生成可控、高质量的操作视频。合成数据提升了真实机器人任务的泛化成功率。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28164",
@@ -150,7 +150,7 @@
       "summary_cn": "S-Avatar旨在从单张图像生成具备新视角一致性的写实3D头部avatar。方法结合diffusion-guided 3D Gaussian Splatting、FLAME对齐与绑定模板，实现实时驱动和表情生成。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28132",
@@ -169,7 +169,7 @@
       "summary_cn": "论文提出 Convolutional Neural Shading（CNS），利用卷积神经着色器从多视图图像重建高质量3D形状，改善暗部和无纹理区域的局部几何细节。另设细节位移网络，减少图像边界表面不规则。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28049",
@@ -188,7 +188,7 @@
       "summary_cn": "论文提出 TSOG，一种面向 4D Gaussian Splatting 的时空有序高斯压缩格式，扩展 SOG 并引入时间属性。实验显示文件大小减少超90%，PSNR变化仅-0.42至+0.85 dB。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.28032",
@@ -207,7 +207,7 @@
       "summary_cn": "论文提出SpiD，一种基于Gaussian Splatting的单图像可驱动头部avatar框架，通过双轴解耦实现内部驱动，并以三分支建模不同面部区域，兼顾表现力与实时推理速度。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27944",
@@ -245,7 +245,7 @@
       "summary_cn": "论文针对无人机远距离理解人体动作与意图时数据稀缺问题，提出Drones2BodyLanguage数据集，将表达10种意图的avatar以几何准确位姿置入4K无人机实景。方法结合语义锚点、单目深度与刚性不变放置，提升多类动作识别效果。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27749",
@@ -264,7 +264,7 @@
       "summary_cn": "论文针对仅从单一闭合静止状态重建可动物体的难题，提出rest-state框架，以显式mesh融合视觉语言与分割结果。借助video diffusion生成运动假设，并通过几何一致性估计关节参数，实现合理的部件分解与运动结构重建。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27729",
@@ -283,7 +283,7 @@
       "summary_cn": "论文提出 PrintAnything，从3D点云直接生成可执行的3D打印G-code，避免网格重建及其几何伪影。方法通过分层点投影和G-plan map统一表示几何与挤出信息，实现无网格切片路径生成。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27634",
@@ -302,7 +302,7 @@
       "summary_cn": "4DHumanDiff提出直接从文本生成4D Gaussian Splatting动态人体，避免视频预生成与逐场景重建。结合时序注意力、6万对数据集、2D正则化和免训练4D插值，实现一致的360度视图与平滑运动。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27592",
@@ -321,7 +321,7 @@
       "summary_cn": "MeshFM提出高效前馈框架，将视觉基础模型的2D features蒸馏至3D形状。无需3D标注或推理优化，即可支持part segmentation、dense correspondence和mesh deformation，并适应极端旋转。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27558",
@@ -340,7 +340,7 @@
       "summary_cn": "针对栅格化2D CAD图纸难以恢复参数化CAD序列、尺寸标注与几何信息关联不足的问题，提出Drawing-Recode。该框架结合图像编码器、文字识别、cross-attention与Annotation Grounding Loss，由LLM生成SPCC格式CAD代码。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27537",
@@ -359,7 +359,7 @@
       "summary_cn": "ProgFormer旨在预测纵向脑MRI未来结构，兼顾稳定的全局结构与细微的疾病进展。该方法采用分层体素空间Diffusion Transformer，通过粗到细路径和conditional flow matching直接生成预测影像。",
       "affiliations": "",
       "crawled_date": "2026-08-01",
-      "last_seen_date": "2026-08-01"
+      "last_seen_date": "2026-08-02"
     },
     {
       "arxiv_id": "2607.27065",
