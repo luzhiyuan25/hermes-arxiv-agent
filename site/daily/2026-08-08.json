@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-08",
+  "papers": [
+    {
+      "arxiv_id": "2608.06307",
+      "versioned_id": "2608.06307v1",
+      "title": "UQ-Loc: Uncertainty-Aware LiDAR Scene Coordinate Regression",
+      "authors": "Jacek Komorowski",
+      "published_date": "2026-08-06",
+      "updated_date": "2026-08-06",
+      "published_at": "2026-08-06T17:23:17Z",
+      "updated_at": "2026-08-06T17:23:17Z",
+      "categories": "cs.CV",
+      "abstract": "LiDAR-based Scene Coordinate Regression (SCR) maps point clouds directly to 3D scene coordinates, enabling precise 6-DoF localisation without explicit map retrieval. However, existing methods produce deterministic predictions, discarding aleatoric uncertainty that could improve robustness and downstream decision-making. We present UQ-Loc, which extends the LightLoc architecture with an anisotropic Gaussian covariance head that predicts a full 3x3 positive-definite covariance matrix per voxel. Training uses a Negative Log-Likelihood (NLL) loss augmented with a kNN-based spatial smoothness regulariser, while inference employs a modified SC2-PCR solver with uncertainty-weighted seed scoring and a Mahalanobis-distance inlier test. We adopt Expected Calibration Error (ECE) as a principled metric for evaluating the quality of the predicted uncertainty. Experiments demonstrate that UQ-Loc achieves consistent improvement in 6-DoF localization accuracy while producing well-calibrated covariances.",
+      "abs_url": "https://arxiv.org/abs/2608.06307",
+      "pdf_url": "https://arxiv.org/pdf/2608.06307v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "UQ-Loc针对LiDAR场景坐标回归忽略不确定性的问题，在LightLoc上加入各向异性Gaussian协方差头。结合NLL、kNN空间平滑正则及不确定性感知推理，提升6-DoF定位精度与协方差校准性。",
+      "affiliations": "",
+      "crawled_date": "2026-08-08",
+      "last_seen_date": "2026-08-08"
+    }
+  ]
+}

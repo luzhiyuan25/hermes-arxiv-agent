@@ -1,6 +1,25 @@
 {
   "papers": [
     {
+      "arxiv_id": "2608.06307",
+      "versioned_id": "2608.06307v1",
+      "title": "UQ-Loc: Uncertainty-Aware LiDAR Scene Coordinate Regression",
+      "authors": "Jacek Komorowski",
+      "published_date": "2026-08-06",
+      "updated_date": "2026-08-06",
+      "published_at": "2026-08-06T17:23:17Z",
+      "updated_at": "2026-08-06T17:23:17Z",
+      "categories": "cs.CV",
+      "abstract": "LiDAR-based Scene Coordinate Regression (SCR) maps point clouds directly to 3D scene coordinates, enabling precise 6-DoF localisation without explicit map retrieval. However, existing methods produce deterministic predictions, discarding aleatoric uncertainty that could improve robustness and downstream decision-making. We present UQ-Loc, which extends the LightLoc architecture with an anisotropic Gaussian covariance head that predicts a full 3x3 positive-definite covariance matrix per voxel. Training uses a Negative Log-Likelihood (NLL) loss augmented with a kNN-based spatial smoothness regulariser, while inference employs a modified SC2-PCR solver with uncertainty-weighted seed scoring and a Mahalanobis-distance inlier test. We adopt Expected Calibration Error (ECE) as a principled metric for evaluating the quality of the predicted uncertainty. Experiments demonstrate that UQ-Loc achieves consistent improvement in 6-DoF localization accuracy while producing well-calibrated covariances.",
+      "abs_url": "https://arxiv.org/abs/2608.06307",
+      "pdf_url": "https://arxiv.org/pdf/2608.06307v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "UQ-Loc针对LiDAR场景坐标回归忽略不确定性的问题，在LightLoc上加入各向异性Gaussian协方差头。结合NLL、kNN空间平滑正则及不确定性感知推理，提升6-DoF定位精度与协方差校准性。",
+      "affiliations": "",
+      "crawled_date": "2026-08-08",
+      "last_seen_date": "2026-08-08"
+    },
+    {
       "arxiv_id": "2608.06231",
       "versioned_id": "2608.06231v1",
       "title": "EmoWorld: A Decoupled Affective Field for Controllable Emotional Video Generation",
@@ -17,7 +36,7 @@
       "summary_cn": "论文提出EmoWorld，在冻结的Video DiT中解耦氛围、语义情感线索与时间变化。通过VAS、SAS和TAS实现可控情感视频生成，支持多种情感类别及text-to-video、image-to-video。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.06170",
@@ -36,7 +55,7 @@
       "summary_cn": "Prior-SG针对开放式、任意结构环境中的场景图区域划分问题，融合RGB-D、多尺度开放词汇特征与LLM生成的先验图。通过MAP估计和MRF整合视觉、几何及物体信息，实现面向任务的零样本空间重划分。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.06164",
@@ -55,7 +74,7 @@
       "summary_cn": "论文针对可变形物体稀疏重建中轴向弹簧导致局部变形不稳定的问题，提出BendTwin。该方法在可微分spring-mass模型中引入基于表面三元组的弯曲刚度与阻尼，提升物理稳定性并优于PhysTwin。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.06117",
@@ -74,7 +93,7 @@
       "summary_cn": "论文研究如何改善3D Gaussian Splatting的几何重建，尤其针对高反光物体。方法引入多视角预测的深度、法线及confidence map加权先验，提升复杂场景重建质量。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.06075",
@@ -93,7 +112,7 @@
       "summary_cn": "论文研究商业视觉语言模型进行阴影移除时产生内容幻觉和物理错误的问题。提出基于阴影形成物理先验的 agentic candidate-selection 流程，通过生成、评估、重试与筛选兼顾去阴影和场景保真。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05960",
@@ -112,7 +131,7 @@
       "summary_cn": "这篇论文关注“Big, Bright, or Invisible: A Frozen-Feature Benchmark of 3D CT Foundation Models”，arXiv 分类为 cs.CV, cs.AI。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05920",
@@ -131,7 +150,7 @@
       "summary_cn": "这篇论文关注“Floating Radiance Networks”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05879",
@@ -150,7 +169,7 @@
       "summary_cn": "这篇论文关注“To See a World in a Living Context: Unified Indoor-Outdoor Urban World Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05844",
@@ -169,7 +188,7 @@
       "summary_cn": "针对3D医学图像分割中预训练模型迁移能力不足的问题，论文提出Curia-MAE，引入稳健重建、特征正则化和局部-全局相似性目标。其在30万幅CT/MRI图像上进行多模态、多解剖部位预训练，提升多项分割任务表现。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05843",
@@ -188,7 +207,7 @@
       "summary_cn": "这篇论文关注“Overcoming Attention Drift: Homogeneity-Heterogeneity Guided Feature Aggregation for Low-Light Remote Sensing Image Enhancement”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05804",
@@ -207,7 +226,7 @@
       "summary_cn": "这篇论文关注“Ordered Diffusion for 3D Human Registration”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05798",
@@ -226,7 +245,7 @@
       "summary_cn": "这篇论文关注“KVAE: Family of Tokenizers for Multimodal Generative Models”，arXiv 分类为 cs.CV, cs.LG, cs.SD。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05774",
@@ -245,7 +264,7 @@
       "summary_cn": "论文探究3D场景中物体缺失时，JEPA预测路径能否推断其潜在状态。提出SR-JEPA，一种可查询指定位置的point-native JEPA，仅用3D EMA目标训练，并验证其能结合上下文推断物体身份与内容。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05706",
@@ -264,7 +283,7 @@
       "summary_cn": "论文探讨如何从多视角人类视频学习具备3D感知的latent actions。提出LAWM-3D，结合multi-view invariant action tokenization、3D几何对齐与RGB-D联合重建，提升机器人world model的生成质量、物理一致性和泛化能力。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05704",
@@ -283,7 +302,7 @@
       "summary_cn": "针对彩色LiDAR地图转为3D Gaussian Splatting后原语过多、压缩易损失表面细节的问题，提出G²ARD-GS。该方法通过几何引导整合、anchor约束外观恢复和视角选择，生成紧凑、可复用表示。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05615",
@@ -302,7 +321,7 @@
       "summary_cn": "这篇论文关注“ALTER: Modeling Longitudinal Changes via Regional Differencing for 3D CT Report Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05570",
@@ -321,7 +340,7 @@
       "summary_cn": "针对静态场景360-degree telepresence受分辨率限制的问题，论文结合8K panorama与4K PTZ相机，通过背景拼接、实时前景抠像和ROI更新，提升画面细节与交互性。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05569",
@@ -340,7 +359,7 @@
       "summary_cn": "论文针对多视角图像3D visual grounding中坐标系选择与3D框回归耦合导致的歧义，提出CoordRefer。该方法先选参考坐标系，再进行坐标条件化预测，并结合监督微调与基于3D IoU奖励的Group Relative Policy Optimization提升定位性能。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05564",
@@ -359,7 +378,7 @@
       "summary_cn": "这篇论文关注“ESVR: 3D Ellipsoid-based Sparse Volume Rendering via Structure-aware Primitive Learning and Per-primitive Ray Sampling”，arXiv 分类为 cs.GR。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05557",
@@ -378,7 +397,7 @@
       "summary_cn": "论文针对3D点云生成中全局形状与局部细节难兼顾、采样成本高的问题，提出Hierarchical Flow Matching（HFM）。该方法以两级Optimal-Transport flow matching分别建模潜空间全局形状与条件点云细节，每级仅需约15步Euler采样即可生成。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05539",
@@ -397,7 +416,7 @@
       "summary_cn": "论文提出OmniMech，一个面向工业机械设计的百万级多模态基准，涵盖CAD生成、3D重建、标注推理与工具增强推理。实验表明，现有VLM仍难以处理细粒度几何及尺寸公差。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05505",
@@ -416,7 +435,7 @@
       "summary_cn": "这篇论文关注“DynaPix: Can Vision-Language Models Identify the Exact Future?”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05482",
@@ -435,7 +454,7 @@
       "summary_cn": "论文提出CDSeg，利用Gaussian Splatting中的可渲染Gaussian primitives，根据渲染可见性将2D图像掩码迁移至3D。无需任务特定的3D分割训练，支持点云、Gaussian场景与多视图标签复用。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05145",
@@ -454,7 +473,7 @@
       "summary_cn": "这篇论文关注“Objects as Audio-Visual Modal Sound Fields”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05389",
@@ -473,7 +492,7 @@
       "summary_cn": "这篇论文关注“Text-Guided Refinement of Multi-sequence Glioma Subregion Segmentation with a Vision-Language Foundation Model”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05356",
@@ -492,7 +511,7 @@
       "summary_cn": "论文针对多时相城市LiDAR地图的目标级变化检测，提出融合检测限感知配准、几何代理、语义分割及位移线索的LoDA方法，并构建相应benchmark。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05248",
@@ -511,7 +530,7 @@
       "summary_cn": "这篇论文关注“WorldClaw: Agentic 3D Open-World Generation at Scale”，arXiv 分类为 cs.AI, cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05242",
@@ -530,7 +549,7 @@
       "summary_cn": "论文提出将3D感知与空间推理解耦。DiSR利用现成感知模型构建结构化3D几何证据，并通过LoRA微调LLM进行推理，提升可解释性、模块化与效率。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05215",
@@ -546,10 +565,10 @@
       "abs_url": "https://arxiv.org/abs/2608.05215",
       "pdf_url": "https://arxiv.org/pdf/2608.05215v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对人类与机器人具身差异导致的操作技能迁移难题，提出基于视觉语言模型的VLAff，统一学习视觉、抓取与轨迹affordance。作者构建EgoAffordance数据集，并验证其支持零样本操作与affordance引导的机器人学习。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05137",
@@ -568,7 +587,7 @@
       "summary_cn": "SmartMage针对3D场景理解中固定模态组合导致信息噪声与计算浪费的问题，提出动态编排异构模态的统一MLLM。其SMART路由与MAGE门控模块按语义自适应选择模态并激活专家，在多个基准上取得领先性能。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05101",
@@ -584,10 +603,10 @@
       "abs_url": "https://arxiv.org/abs/2608.05101",
       "pdf_url": "https://arxiv.org/pdf/2608.05101v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "针对AI篡改CT体数据检测的泛化与可解释性问题，论文提出HexMIL：仅用体级二分类监督，通过层次化patch/slice与Gated Attention实现检测及篡改区域定位。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05100",
@@ -606,7 +625,7 @@
       "summary_cn": "论文针对CT中小病灶检测信号易被周围组织稀释的问题，提出SALT，用弱框标注自适应调节自蒸馏温度与掩码损失。冻结编码器后结合轻量CenterNet式检测头，在四个CT队列评估3D病灶检测。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.05066",
@@ -625,7 +644,7 @@
       "summary_cn": "论文针对3D重建中的相机标定问题，提出基于场景射线预测的框架，并以重建误差、交汇误差结合bootstrap评估标定质量。设计icosahedron标定靶，验证广义畸变模型可提升准确性。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04842",
@@ -644,7 +663,7 @@
       "summary_cn": "论文提出RORA，从单个静态物体视频重建带准确关节结构的仿真资产，结合3D Gaussian Splatting与网格几何。通过人机协同分割和Automatic Joint Suggestion实现复杂物体articulation，并支持机器人学习中的3D manipulation。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04810",
@@ -663,7 +682,7 @@
       "summary_cn": "这篇论文关注“Segmentation Pre-training for Label-Efficient Lumbar Spine Degeneration Grading”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04764",
@@ -682,7 +701,7 @@
       "summary_cn": "论文提出一种基于 Gaussian splatting 的锥束CT金属伪影消除方法，以紧凑衰减模型刻画材料的能量依赖性。该方法联合优化几何与材料属性，无需金属掩膜，并能更快收敛、有效保留细节。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04752",
@@ -701,7 +720,7 @@
       "summary_cn": "论文研究稀疏视角CT中Gaussian Splatting易受姿态误差影响、产生条带伪影的问题。提出联合优化成像几何参数的稳定梯度框架，提升真实条件下的重建质量。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04737",
@@ -720,7 +739,7 @@
       "summary_cn": "论文针对稀疏、低分辨率且含噪的dToF深度难以用于密集感知的问题，提出双分支Vision Transformer与masked joint attention框架。结合逼真的dToF仿真数据，仅用合成数据训练即可在多设备、多数据集上实现高效零样本泛化。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04722",
@@ -739,7 +758,7 @@
       "summary_cn": "这篇论文关注“Multi-View Face and Gesture Animation with Dynamic Gaussians”，arXiv 分类为 cs.CV, cs.GR。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04720",
@@ -758,7 +777,7 @@
       "summary_cn": "这篇论文关注“YOLOv14:Unified Cross-Domain Real-Time Object Detectionwith Adaptive Multi-View Representation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04701",
@@ -777,7 +796,7 @@
       "summary_cn": "这篇论文关注“UniWorld-View: Large-Baseline View Synthesis via Video Diffusion Models”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04673",
@@ -796,7 +815,7 @@
       "summary_cn": "针对外参标定误差影响6-DOF平台微运动估计的问题，论文提出基于帧间图像位移和已知3D控制点的差分位姿估计方法，结合SE(3)建模，支持单目与多相机。理论证明平移外参误差可精确抵消，并给出旋转误差界、可观测性与一致估计器。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04642",
@@ -815,7 +834,7 @@
       "summary_cn": "针对MRI肝脏肿瘤切片级2D检测在深度方向预测碎片化、不稳定的问题，论文提出轻量、模型无关的YOLO-PVC，通过连续性约束、百分位聚合和MLP校准实现2D-to-3D定位，并提升IoU₃D。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04610",
@@ -834,7 +853,7 @@
       "summary_cn": "这篇论文关注“HiSC: Hierarchical Spatial Clustering Token Compression for Efficient 3D Scene Understanding”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04581",
@@ -853,7 +872,7 @@
       "summary_cn": "这篇论文关注“ACA-GS: Adaptive-Capacity Anchored Gaussian Splatting for Compact Dynamic Radiance Fields”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04568",
@@ -872,7 +891,7 @@
       "summary_cn": "这篇论文关注“Talk2Sensors: 3D Visual Grounding in Autonomous Driving via Sensor-Adaptive Physical Cue Matching”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04560",
@@ -891,7 +910,7 @@
       "summary_cn": "这篇论文关注“OutLangSplat: 3D Language Gaussian Splatting for UAV Outdoor Scenes”，arXiv 分类为 cs.CV, cs.GR。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04557",
@@ -910,7 +929,7 @@
       "summary_cn": "这篇论文关注“VoxStruct3D: Structure-Leading Flow Matching for Voxel-Space 3D MRI Synthesis”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04515",
@@ -929,7 +948,7 @@
       "summary_cn": "CARVE针对3D医疗体积切片式MLLM的视觉token冗余与高成本，提出无需训练的2.5D预算分配框架。通过跨切片证据自适应分配token并合并邻近token，削减约80% token仍保留98.1%的全token性能。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04434",
@@ -948,7 +967,7 @@
       "summary_cn": "这篇论文关注“OmniRouting: A Semantic-Coupled Multimodal Benchmark for Constraint-Aware Spatial Reasoning in PCB Routing”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04412",
@@ -967,7 +986,7 @@
       "summary_cn": "论文提出 muSync-GS，通过将降水推导的路面状态、轮胎摩擦与车辆动力学结合，实现恶劣天气和道路几何风险下的 driving video synthesis。该方法同步编辑路面外观、几何与 ego-camera motion，并预测车辆速度、侧滑等物理响应。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-07"
+      "last_seen_date": "2026-08-08"
     },
     {
       "arxiv_id": "2608.04230",
@@ -1097,7 +1116,7 @@
       "abs_url": "https://arxiv.org/abs/2608.03822",
       "pdf_url": "https://arxiv.org/pdf/2608.03822v1",
       "source_query": "cat:cs.CV+AND+all:scene+AND+all:layout",
-      "summary_cn": "",
+      "summary_cn": "FlowForm针对洪灾前后卫星影像配对数据稀缺及洪水布局失真问题，结合SWE-inspired潜在正则化与结构感知条件进行卫星洪水合成。论文还构建FloodScape数据集，并提升了洪水区域一致性与生成质量。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
       "last_seen_date": "2026-08-07"
