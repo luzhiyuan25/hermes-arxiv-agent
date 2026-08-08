@@ -17,7 +17,7 @@
       "summary_cn": "UQ-Loc针对LiDAR场景坐标回归忽略不确定性的问题，在LightLoc上加入各向异性Gaussian协方差头。结合NLL、kNN空间平滑正则及不确定性感知推理，提升6-DoF定位精度与协方差校准性。",
       "affiliations": "",
       "crawled_date": "2026-08-08",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.06231",
@@ -36,7 +36,7 @@
       "summary_cn": "论文提出EmoWorld，在冻结的Video DiT中解耦氛围、语义情感线索与时间变化。通过VAS、SAS和TAS实现可控情感视频生成，支持多种情感类别及text-to-video、image-to-video。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.06170",
@@ -55,7 +55,7 @@
       "summary_cn": "Prior-SG针对开放式、任意结构环境中的场景图区域划分问题，融合RGB-D、多尺度开放词汇特征与LLM生成的先验图。通过MAP估计和MRF整合视觉、几何及物体信息，实现面向任务的零样本空间重划分。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.06164",
@@ -74,7 +74,7 @@
       "summary_cn": "论文针对可变形物体稀疏重建中轴向弹簧导致局部变形不稳定的问题，提出BendTwin。该方法在可微分spring-mass模型中引入基于表面三元组的弯曲刚度与阻尼，提升物理稳定性并优于PhysTwin。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.06117",
@@ -93,7 +93,7 @@
       "summary_cn": "论文研究如何改善3D Gaussian Splatting的几何重建，尤其针对高反光物体。方法引入多视角预测的深度、法线及confidence map加权先验，提升复杂场景重建质量。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.06075",
@@ -112,7 +112,7 @@
       "summary_cn": "论文研究商业视觉语言模型进行阴影移除时产生内容幻觉和物理错误的问题。提出基于阴影形成物理先验的 agentic candidate-selection 流程，通过生成、评估、重试与筛选兼顾去阴影和场景保真。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05960",
@@ -131,7 +131,7 @@
       "summary_cn": "这篇论文关注“Big, Bright, or Invisible: A Frozen-Feature Benchmark of 3D CT Foundation Models”，arXiv 分类为 cs.CV, cs.AI。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05920",
@@ -150,7 +150,7 @@
       "summary_cn": "这篇论文关注“Floating Radiance Networks”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05879",
@@ -169,7 +169,7 @@
       "summary_cn": "这篇论文关注“To See a World in a Living Context: Unified Indoor-Outdoor Urban World Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05844",
@@ -188,7 +188,7 @@
       "summary_cn": "针对3D医学图像分割中预训练模型迁移能力不足的问题，论文提出Curia-MAE，引入稳健重建、特征正则化和局部-全局相似性目标。其在30万幅CT/MRI图像上进行多模态、多解剖部位预训练，提升多项分割任务表现。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05843",
@@ -207,7 +207,7 @@
       "summary_cn": "这篇论文关注“Overcoming Attention Drift: Homogeneity-Heterogeneity Guided Feature Aggregation for Low-Light Remote Sensing Image Enhancement”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05804",
@@ -226,7 +226,7 @@
       "summary_cn": "这篇论文关注“Ordered Diffusion for 3D Human Registration”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05798",
@@ -245,7 +245,7 @@
       "summary_cn": "这篇论文关注“KVAE: Family of Tokenizers for Multimodal Generative Models”，arXiv 分类为 cs.CV, cs.LG, cs.SD。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05774",
@@ -264,7 +264,7 @@
       "summary_cn": "论文探究3D场景中物体缺失时，JEPA预测路径能否推断其潜在状态。提出SR-JEPA，一种可查询指定位置的point-native JEPA，仅用3D EMA目标训练，并验证其能结合上下文推断物体身份与内容。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05706",
@@ -283,7 +283,7 @@
       "summary_cn": "论文探讨如何从多视角人类视频学习具备3D感知的latent actions。提出LAWM-3D，结合multi-view invariant action tokenization、3D几何对齐与RGB-D联合重建，提升机器人world model的生成质量、物理一致性和泛化能力。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05704",
@@ -302,7 +302,7 @@
       "summary_cn": "针对彩色LiDAR地图转为3D Gaussian Splatting后原语过多、压缩易损失表面细节的问题，提出G²ARD-GS。该方法通过几何引导整合、anchor约束外观恢复和视角选择，生成紧凑、可复用表示。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05615",
@@ -321,7 +321,7 @@
       "summary_cn": "这篇论文关注“ALTER: Modeling Longitudinal Changes via Regional Differencing for 3D CT Report Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05570",
@@ -340,7 +340,7 @@
       "summary_cn": "针对静态场景360-degree telepresence受分辨率限制的问题，论文结合8K panorama与4K PTZ相机，通过背景拼接、实时前景抠像和ROI更新，提升画面细节与交互性。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05569",
@@ -359,7 +359,7 @@
       "summary_cn": "论文针对多视角图像3D visual grounding中坐标系选择与3D框回归耦合导致的歧义，提出CoordRefer。该方法先选参考坐标系，再进行坐标条件化预测，并结合监督微调与基于3D IoU奖励的Group Relative Policy Optimization提升定位性能。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05564",
@@ -378,7 +378,7 @@
       "summary_cn": "这篇论文关注“ESVR: 3D Ellipsoid-based Sparse Volume Rendering via Structure-aware Primitive Learning and Per-primitive Ray Sampling”，arXiv 分类为 cs.GR。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05557",
@@ -397,7 +397,7 @@
       "summary_cn": "论文针对3D点云生成中全局形状与局部细节难兼顾、采样成本高的问题，提出Hierarchical Flow Matching（HFM）。该方法以两级Optimal-Transport flow matching分别建模潜空间全局形状与条件点云细节，每级仅需约15步Euler采样即可生成。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05539",
@@ -416,7 +416,7 @@
       "summary_cn": "论文提出OmniMech，一个面向工业机械设计的百万级多模态基准，涵盖CAD生成、3D重建、标注推理与工具增强推理。实验表明，现有VLM仍难以处理细粒度几何及尺寸公差。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05505",
@@ -435,7 +435,7 @@
       "summary_cn": "这篇论文关注“DynaPix: Can Vision-Language Models Identify the Exact Future?”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05482",
@@ -454,7 +454,7 @@
       "summary_cn": "论文提出CDSeg，利用Gaussian Splatting中的可渲染Gaussian primitives，根据渲染可见性将2D图像掩码迁移至3D。无需任务特定的3D分割训练，支持点云、Gaussian场景与多视图标签复用。",
       "affiliations": "",
       "crawled_date": "2026-08-07",
-      "last_seen_date": "2026-08-08"
+      "last_seen_date": "2026-08-09"
     },
     {
       "arxiv_id": "2608.05145",
@@ -2465,7 +2465,7 @@
       "abs_url": "https://arxiv.org/abs/2608.00925",
       "pdf_url": "https://arxiv.org/pdf/2608.00925v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对全景单目 SLAM 中的相机倾斜、尺度漂移与误闭环问题，挖掘 frozen panoramic geometry foundation model 的中间 token 和跨视图注意力线索。提出 HALO-SLAM，通过重力读出实现无 IMU 校正，并结合级联检索、注意力筛选和稠密几何验证优化闭环。",
       "affiliations": "",
       "crawled_date": "2026-08-05",
       "last_seen_date": "2026-08-05"
