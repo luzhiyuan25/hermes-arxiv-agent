@@ -17,7 +17,7 @@
       "summary_cn": "论文提出SCULPT，用subtractive composition在结构化3D latent space中迭代联合生成部件与剩余物体。该方法支持自适应部件数量，并减少接缝空洞、互穿和材质不连续。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13518",
@@ -33,10 +33,10 @@
       "abs_url": "https://arxiv.org/abs/2608.13518",
       "pdf_url": "https://arxiv.org/pdf/2608.13518v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "这篇论文关注“Intervention-Aware Clinical World Model for Post-Op Outcome Forecasting in Cardiology”，arXiv 分类为 cs.LG, cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13502",
@@ -55,7 +55,7 @@
       "summary_cn": "论文提出 GS²CI，利用 3D Gaussian Splatting 与大型视觉模型先验，从单次 SCI 测量重建高质量 3D 场景。引入伪视图监督和 OSGR 稠密化策略，提升重建质量、视角鲁棒性与效率。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13453",
@@ -74,7 +74,7 @@
       "summary_cn": "这篇论文关注“UniTexture: Cross-Task Universal Adversarial Textures for Vision-Language-Action Models”，arXiv 分类为 cs.CV, cs.AI。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13255",
@@ -93,7 +93,7 @@
       "summary_cn": "针对多视角纹理扩散去噪开销大、加速易损害跨视角一致性的问题，论文提出无需训练的GeoCache。它利用几何对应关系传输锚点视图的逐步更新，并周期性进行全视图计算，以提升速度与保真度权衡。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13226",
@@ -112,7 +112,7 @@
       "summary_cn": "针对3D VLM视觉token过多导致推理计算瓶颈，论文提出免训练的CoverPrune，将token pruning建模为Optimal Transport并结合FST成本与SGS算法，以保留视觉证据覆盖和空间推理性能。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13159",
@@ -131,7 +131,7 @@
       "summary_cn": "针对金属导致的CBCT束硬化伪影，论文将多色X射线投影、材料衰减与系统响应建模融入Gaussian Splatting，联合优化重建与光谱参数。方法无需人工金属掩膜，并发布高保真合成数据集。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13147",
@@ -150,7 +150,7 @@
       "summary_cn": "论文针对多摄像头自动驾驶感知中共享表示难以保持显式度量几何与一致3D结构的问题，提出GeoUP。该框架改造VGGT重建潜变量，引入self、temporal、view attention及标定感知raymap，统一支持深度、3D检测和semantic occupancy预测。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13112",
@@ -169,7 +169,7 @@
       "summary_cn": "这篇论文关注“Towards Physics-Faithful Generation of Scientific Diagrams”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13104",
@@ -188,7 +188,7 @@
       "summary_cn": "论文提出一种在线迭代学习图像序列点对应关系的方法。该方法以Neyman卡方散度优化基于基函数的密度通道映射，支持未知成像几何并实现实时、高精度收敛。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13095",
@@ -207,7 +207,7 @@
       "summary_cn": "论文针对具身智能空间推理缺乏兼具真实感与可查询语义的环境，提出以 Semantic Radiance Fields（SRF）构建模拟器。SRF将2D语义分割提升至3D radiance field，统一编码几何、外观和语义，支持新视角合成及语义、自由空间查询。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.13014",
@@ -226,7 +226,7 @@
       "summary_cn": "EgoPHI旨在从单目第一视角RGB图像和物体几何中，联合估计手与物体网格上的稠密3D接触图和力分布。论文通过物理仿真生成稠密力监督，提升跨数据集及真实场景的力估计与交互理解。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12997",
@@ -245,7 +245,7 @@
       "summary_cn": "论文指出 latent SDS 受 VAE-induced pixel drift 影响，会产生结构化色彩伪影和高频噪声。提出 PixSDS，通过解码 latent SDS lookahead 修复像素梯度，在保持语义的同时减少伪影。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12827",
@@ -264,7 +264,7 @@
       "summary_cn": "这篇论文关注“Validation of Smartphone-Based Photogrammetric 3D Body Scanning for Automated Anthropometric Measurements Compared with a Commercial Depth-Sensor-Based Body Scanner”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12825",
@@ -283,7 +283,7 @@
       "summary_cn": "论文针对 query-based feed-forward 3D Gaussian Splatting 中高斯分布缺乏空间连贯性的问题，提出 LocusGS。该方法引入可迭代优化的3D锚点，通过几何偏置与局部解码提升新视角合成质量及空间组织。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12780",
@@ -302,7 +302,7 @@
       "summary_cn": "SCOPE针对视频 Diffusion Transformers 的二次复杂度及稀疏注意力漏选关键键问题，提出结合3D-RoPE对齐子空间聚类与在线逐头Top-k估计的免训练方法。实验显示其兼顾保真度与延迟，端到端最高加速1.99倍。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12689",
@@ -321,7 +321,7 @@
       "summary_cn": "针对多参数3D MRI的跨模态推理与空间对齐难题，论文提出视觉语言基础模型Mr3D-VL。模型采用共享3D编码器、4D旋转位置嵌入和多分辨率特征投影，支持报告生成与问答。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12658",
@@ -340,7 +340,7 @@
       "summary_cn": "这篇论文关注“Inference-Time Orthogonal Seeding Enables Geometry-Aligned 3D Organ Segmentation for Slice-Propagation Methods”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-15",
-      "last_seen_date": "2026-08-15"
+      "last_seen_date": "2026-08-16"
     },
     {
       "arxiv_id": "2608.12537",
