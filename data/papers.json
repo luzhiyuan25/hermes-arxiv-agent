@@ -1,6 +1,500 @@
 {
   "papers": [
     {
+      "arxiv_id": "2608.18055",
+      "versioned_id": "2608.18055v1",
+      "title": "Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction",
+      "authors": "Veronika Spieker, Wenqi Huang, Cemre Ariyurek, Liam Timms, Daniel Rueckert, Onur Afacan, Julia A. Schnabel, Sila Kurugol",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T17:48:22Z",
+      "updated_at": "2026-08-18T17:48:22Z",
+      "categories": "eess.IV, cs.CV, cs.LG, eess.SP, physics.med-ph",
+      "abstract": "Reliable quantitative analysis of dynamic contrast-enhanced MRI requires high-quality spatiotemporal reconstructions at high undersampling rates. Scan-specific reconstructions using Gaussian and Gabor primitives have shown promising results without the need for large training datasets, but have not addressed the additional dimension of dynamic contrast. We propose a multi-dimensional, primitive based framework for dynamic contrast-enhanced MRI reconstruction that disentangles the underlying anatomy, the dynamic contrast enhancement, and residual motion into separate temporal basis functions, thereby enabling a geometrical interpretation of the representation. We show that this architecture achieves performance competitive with conventional reconstruction methods, both in reconstruction quality and in the accuracy of extracted aorta and kidney enhancement curves. The modular tier design extends naturally to additional dynamic factors and higher acceleration rates. Code available at https://github.com/compai-lab/ 2026-GaborDCE-spieker.",
+      "abs_url": "https://arxiv.org/abs/2608.18055",
+      "pdf_url": "https://arxiv.org/pdf/2608.18055v1",
+      "source_query": "cat:cs.CV+AND+all:Gaussian+AND+all:reconstruction",
+      "summary_cn": "这篇论文关注“Primitive Representation Learning for Unsupervised Dynamic Contrast Enhanced MRI Reconstruction”，arXiv 分类为 eess.IV, cs.CV, cs.LG, eess.SP, physics.med-ph。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.18036",
+      "versioned_id": "2608.18036v1",
+      "title": "Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors",
+      "authors": "Mahdi Saberi, Yaşar Utku Alçalar, Merve Gülle, Chetan Shenoy, Mehmet Akçakaya",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T17:31:07Z",
+      "updated_at": "2026-08-18T17:31:07Z",
+      "categories": "eess.IV, cs.AI, cs.CV, cs.LG, physics.med-ph",
+      "abstract": "MRI reconstruction methods for undersampled k-space data naturally utilize complex-valued measurements. Parallel developments in sparse phase retrieval have shown that magnitude-only measurements may provide complementary information for signal recovery. However, their use in MRI reconstruction remains largely unexplored, due to lack of practical settings where informative magnitude measurements can be obtained without additional scan time. In this work, we investigate the use of auxiliary k-space magnitude information for accelerated steady-state dynamic MRI reconstruction, and demonstrate strong consistency of k-space magnitudes across time-frames. Building on this observation, we propose $\\mathbb{C}+\\text{Mag}$, a magnitude-informed physics-driven deep learning reconstruction method. The proposed method employs an ADMM-based unrolling framework with a novel magnitude-aware data-fidelity formulation, where quadratically smoothed optimization and momentum-based updates are introduced to address the non-differentiability and non-convexity of the magnitude constraints. Experiments on retrospectively undersampled cine MRI and phase-contrast flow MRI datasets, as well as prospectively undersampled real-time cine MRI acquisitions, demonstrate improved artifact suppression, sharper anatomical recovery, and better preservation of phase information compared to conventional PD-DL methods, which is further supported through blinded expert reader evaluations.",
+      "abs_url": "https://arxiv.org/abs/2608.18036",
+      "pdf_url": "https://arxiv.org/pdf/2608.18036v1",
+      "source_query": "cat:cs.CV+AND+all:physical+AND+all:constraint",
+      "summary_cn": "这篇论文关注“Harnessing Magnitude-Only and Complex Measurements for Improved Dynamic MRI Reconstruction with Learned Priors”，arXiv 分类为 eess.IV, cs.AI, cs.CV, cs.LG, physics.med-ph。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.18028",
+      "versioned_id": "2608.18028v1",
+      "title": "Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study",
+      "authors": "Simon Weber, Mateo de Mayo, Je Hyeong Hong, Carl Olsson, Daniel Cremers, Ronald Clark",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T17:23:06Z",
+      "updated_at": "2026-08-18T17:23:06Z",
+      "categories": "cs.CV",
+      "abstract": "Initialization-free bundle adjustment (InitFree BA) aims to recover camera poses and scene structure directly from image observations, avoiding the geometric initialization stages of conventional structure-from-motion pipelines. Recent methods based on Object-Space Error (OSE) formulations and Variable Projection (VarPro) show encouraging optimization behavior from random camera configurations. However, existing evaluations primarily measure optimization success, leaving unclear whether a low OSE objective yields a valid metric 3D reconstruction. We revisit InitFree BA experimentally through a unified evaluation framework combining a C++ implementation of existing OSE formulations with a Blender-based dataset generator providing exact ground truth and controlled camera configurations and observation densities. Our experiments reveal a previously overlooked optimization--reconstruction gap: projective solutions with similarly low OSE values can lead to substantially different Euclidean reconstructions after metric upgrade. We identify initialization priors, landmark observation density, and metric-upgrade stability as key factors governing reconstruction success. Overall, our results suggest that the main challenge of InitFree BA is not merely minimizing OSE objectives, but obtaining projective reconstructions that admit reliable metric upgrade. We believe that the proposed benchmark, implementation, and analysis establish stronger experimental foundations for future research on initialization-free bundle adjustment, a problem largely unexplored within the computer vision community. Project page is available at https://github.com/simonwebertum/InitFreeBA.git.",
+      "abs_url": "https://arxiv.org/abs/2608.18028",
+      "pdf_url": "https://arxiv.org/pdf/2608.18028v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Initialization-Free Bundle Adjustment Revisited: A Controlled Experimental Study”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.18012",
+      "versioned_id": "2608.18012v1",
+      "title": "Automated ACL Footprint Identification Using 3D Deep Learning",
+      "authors": "Ruida Cheng, Ali Uneri, Gabriel Gibson, Frances T. Sheehan, Barry Boden",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T17:01:02Z",
+      "updated_at": "2026-08-18T17:01:02Z",
+      "categories": "cs.CV",
+      "abstract": "One of the most common reasons for anterior cruciate ligament (ACL) reconstruction failure is femoral tunnel malpositioning (ACL footprint center and tunnel orientation). Such failures may lead to the development of meniscal pathology and osteoarthritis. Accurate ACL femoral footprint identification is therefore essential for precise tunnel placement, restoration of the native knee joint mechanics, post-surgical knee joint health and prevention of graft failure. Recent advances in artificial intelligence (AI) bring new opportunities to improve image-guided orthopedic surgery. However, at present, existing AI research focuses primarily on ACL segmentation and rupture classification based on pre- and post-operative magnetic resonance (MR) images. Identification of the ACL footprint center using deep learning methods has not been thoroughly researched. Thus, the purpose of this study is to explore 3D deep learning models for ACL femoral footprint identification directly from 3D MR images. Two comprehensive 3D deep learning architectures were developed: a 3D graph convolutional neural network-based geometric model applied to 3D femoral meshes; and a 3D landmark-enhanced identification model based on 3D MR images. A total of 4883 right and 3087 left knee image sets were used from a publicly available database. Eighty percent (80%) were applied to model generation, and twenty percent (20%) were preserved for model testing. Both models achieved excellent performance; however, the image-based method outperformed the model-based method (average error of 2.1mm vs 2.8 mm). Thus, 3D deep learning provides a feasible clinical approach for ACL footprint localization and has the potential to improve ACL reconstruction footprint accuracy.",
+      "abs_url": "https://arxiv.org/abs/2608.18012",
+      "pdf_url": "https://arxiv.org/pdf/2608.18012v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Automated ACL Footprint Identification Using 3D Deep Learning”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.18009",
+      "versioned_id": "2608.18009v1",
+      "title": "Memory Tree Guided Key Frame Querying for Efficient 3D Question Answering",
+      "authors": "Hsiang-Wei Huang, Fu-Chen Chen, Li-Wu Tsao, Cheng-Han Lee, Che-Chun Su, Lu Xia, Ronghui Peng, Jenq-Neng Hwang, Min Sun, Cheng-Hao Kuo",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T16:56:35Z",
+      "updated_at": "2026-08-18T16:56:35Z",
+      "categories": "cs.CV",
+      "abstract": "Answering questions accurately and efficiently in embodied scenarios presents significant challenges due to limited computational and memory resources for Vision Language Model (VLM) inference. Existing methods adopt visual search key frame retrieval method to select critical question-related key frames for VLM input. However, visual search methods are inefficient because they require visual search among thousands of video frames for each individual user query. In this work, we propose a memory tree guided key frame selection paradigm for efficient 3D question answering in embodied scenarios. Our method leverages a compact and reusable 3D scene representation, termed MemTree3D, which supports real-time online construction leveraging camera 6-DoF poses. MemTree3D captures multi-level 3D scene information, enabling a Large Language Model to efficiently query and retrieve question-relevant key frames through our scoring-based frame selection without reprocessing the entire video stream. On OpenEQA, our method improves the LLM-Match of GPT-4o by 17.4%, LLaVA-OneVision-7B by 5.8%, outperforms existing visual search methods. Our code is available at https://github.com/hsiangwei0903/MemTree3D",
+      "abs_url": "https://arxiv.org/abs/2608.18009",
+      "pdf_url": "https://arxiv.org/pdf/2608.18009v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Memory Tree Guided Key Frame Querying for Efficient 3D Question Answering”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17988",
+      "versioned_id": "2608.17988v1",
+      "title": "GS-Voxel: Fitting-Free Structured Latents for Large-Scale 3DGS Generation",
+      "authors": "Ming Qian, Zijian Wang, Minchao Sun, Jincheng Xiong, Hang Zhang, Mu Xu, Chi Wang, Baoquan Chen",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T16:33:49Z",
+      "updated_at": "2026-08-18T16:33:49Z",
+      "categories": "cs.CV",
+      "abstract": "Many scalable latent 3D generators operate on structured tensors, whereas pre-optimized 3D Gaussian Splatting (3DGS) reconstructions are unordered, spatially irregular, and vary widely in primitive count. We present GS-Voxel, a fitting-free structured latent framework, and evaluate it for large-scale aerial 3D Gaussian scene generation. GS-Voxel deterministically converts a compatible pre-optimized 3DGS reconstruction into sparse active voxels without additional per-scene optimization, retaining the sub-voxel positions and rendering attributes of the selected primitives. A GS-specific factorized VAE then separately encodes voxel geometry and local Gaussian attributes into sparse 3D latents whose size grows with the number of occupied voxels rather than being limited by a fixed scene-wide primitive count. We train image-conditioned flow models in the GS-Voxel latent space to generate aerial 3DGS scenes. A key application enabled by GS-Voxel is large-area scene generation: overlap-aware tiled inference extends synthesis beyond a single training crop conditioned on satellite-view images. Our results show that GS-Voxel provides structured latents for pre-optimized aerial 3DGS reconstructions, with latent capacity that grows with the number of occupied voxels.",
+      "abs_url": "https://arxiv.org/abs/2608.17988",
+      "pdf_url": "https://arxiv.org/pdf/2608.17988v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“GS-Voxel: Fitting-Free Structured Latents for Large-Scale 3DGS Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17975",
+      "versioned_id": "2608.17975v1",
+      "title": "aDSL: Agentic 3D Creation via Joint Agent-Program Design",
+      "authors": "Rui-Huan Wang, Si-Tong Wei, Jia-Qi He, Heng-Yi Wei, Baoquan Chen, Peng-Shuai Wang",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T16:27:44Z",
+      "updated_at": "2026-08-18T16:27:44Z",
+      "categories": "cs.GR, cs.CV",
+      "abstract": "Programmatic representations provide a compelling paradigm for 3D content creation, enabling fine-grained edits, interpretability, and explicit structural control. Yet, agentic workflows that rely on large language models (LLMs) to author 3D programs remain brittle, often failing to translate high-level intent into consistent low-level geometry. We attribute this fragility to a mismatch between existing programmatic interfaces and the reasoning strengths of LLMs, which favor semantic structure and spatial relations over fragile numeric choices. In this paper, we jointly design an Agent-centric Domain-Specific Language (aDSL) and a role-specialized multi-agent system to close this gap. aDSL bridges semantic logic and geometric constraints by emphasizing composability and spatial reasoning; it enables agents to manipulate geometry through relational operators instead of brittle absolute coordinates. Building on aDSL, our training-free multi-agent system follows a Plan-Execute-Critic loop to decompose requests, synthesize code, and iteratively repair errors and constraint violations using execution feedback. Experiments show that this co-design improves robustness, controllability, and faithfulness to user intent. Our method outperforms prior LLM-based baselines on text-to-shape and image-to-shape tasks while preserving explicit structure, editability, and interpretability. It also enables downstream applications such as articulated object creation and structured scene composition. Our code is available at https://github.com/sig-pku/aDSL.",
+      "abs_url": "https://arxiv.org/abs/2608.17975",
+      "pdf_url": "https://arxiv.org/pdf/2608.17975v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“aDSL: Agentic 3D Creation via Joint Agent-Program Design”，arXiv 分类为 cs.GR, cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17926",
+      "versioned_id": "2608.17926v1",
+      "title": "PerFact: Perception-Derived Fact Prompting for 3D Brain MRI Report Generation",
+      "authors": "Jianyu Sun, Zhenxuan Zhang, Guang Yang, Peter J. Lally",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T15:47:45Z",
+      "updated_at": "2026-08-18T15:47:45Z",
+      "categories": "cs.CV",
+      "abstract": "Radiology report generation has matured almost entirely on 2D chest radiographs, where the default route to better reports is a larger backbone or a pre-training one on medical data. We revisit that assumption on 3D multi-sequence brain MRI, a volumetric multi-disease regime, and find that the model is not the lever. Zero-shot medical and radiology vision-language models transfer poorly to brain MRI, with chest radiograph specialists failing most conspicuously, and five backbones fine-tuned identically across three model families and an order of magnitude in scale differ only marginally. What determines the quality of the report is the information injected into the prompt. We delegate perception to upstream 3D segmentation and classification, serialize their outputs into a structured fact sentence, and prompt a LoRA-adapted vision-language model with it; we call this \\textbf{PerFact}. In a controlled study that fixes the backbone, data split, target reports, and adaptation while varying only the injected grounding, perception-derived facts outperform retrieved prior reports, retrieval becomes redundant once facts are present, and end-to-end predicted facts remain effective without any ground-truth annotation at inference. The residual gap between predicted and oracle facts is explained by the granularity of the facts rather than by the generator. Closed-ended visual question answering comes at no measurable cost to report quality, though the grounding source has little effect on it. On 3D brain MRI, grounding information, not model choice, is the dominant controllable factor in report quality.",
+      "abs_url": "https://arxiv.org/abs/2608.17926",
+      "pdf_url": "https://arxiv.org/pdf/2608.17926v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“PerFact: Perception-Derived Fact Prompting for 3D Brain MRI Report Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17803",
+      "versioned_id": "2608.17803v1",
+      "title": "Scale Matters: Adaptive Granularity Selection for Cross-Species 3D Plant Organ Segmentation",
+      "authors": "Carla Salazar, Lazaros Nalpantidis",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T14:03:57Z",
+      "updated_at": "2026-08-18T14:03:57Z",
+      "categories": "cs.CV",
+      "abstract": "Recent 3D foundation models provide powerful feature representations for point cloud learning by controlling spatial granularity. However, relying on a fixed spatial granularity severely limits generalization in applications like plant phenotyping, where organ morphology and size vary substantially across species and growth stages. To address this, we propose AGS-PlantSeg, a few-shot 3D plant organ segmentation method that leverages the frozen Utonia (arXiv:2603.03283) foundation model combined with Adaptive Granularity Selection. By dynamically selecting the best granularity levels for each specific plant model, our method extracts optimized geometric features for a lightweight MLP segmentation head. Extensive experiments across PLANesT-3D (arXiv:2407.21150), Pheno4D , and Crops3D demonstrate that AGS-PlantSeg significantly improves cross-species generalization, achieving 88.9% average mIoU performance and outperforming fixed-granularity baselines by 2.5 mIoU points. Despite requiring minimal annotated data, our approach is highly competitive with fully supervised, plant-specific architectures.",
+      "abs_url": "https://arxiv.org/abs/2608.17803",
+      "pdf_url": "https://arxiv.org/pdf/2608.17803v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Scale Matters: Adaptive Granularity Selection for Cross-Species 3D Plant Organ Segmentation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17787",
+      "versioned_id": "2608.17787v1",
+      "title": "ETHEREAL: A 25.6-$μ$s/inf. Low-latency Event-driven Graph-neural-network Processor for High-resolution Vision at the Edge",
+      "authors": "Adrian Kneip, Martin Lefebvre, Daniel Gehrig, Victoria Catalán Pastor, Davide Scaramuzza, Marian Verhelst, Charlotte Frenkel",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T13:49:50Z",
+      "updated_at": "2026-08-18T13:49:50Z",
+      "categories": "cs.AR, cs.CV",
+      "abstract": "Dynamic vision sensors (DVS) are enticing candidates to reach the low-latency, sub-ms target of edge-vision applications, as they generate events with a $μ$s-level time resolution. However, using DVS front ends also calls for novel algorithm/hardware back ends capable of efficiently handling streams of sparse spatiotemporal events. While event-driven graph neural networks (EV-GNNs) have emerged as a solution on the algorithmic side that is both accurate and efficient, there is no dedicated hardware to date capable of efficiently supporting their mixed requirements of dense-regular compute operations and sparse-irregular memory accesses. We therefore introduce ETHEREAL, the first EV-GNN processor chip, capable of bridging this gap by means of a neighbor-parallel spline-convolution engine combined with a split-2D/3D memory hierarchy that introduces a novel spatiotemporal event-caching mechanism. Measurement results demonstrate a 25.6$μ$s latency and a 1.6$μ$J energy per end-to-end event-wise inference on the state-of-the art DAGr-GNN workload and VGA-resolution (640x480 pixels) DSEC dataset.",
+      "abs_url": "https://arxiv.org/abs/2608.17787",
+      "pdf_url": "https://arxiv.org/pdf/2608.17787v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“ETHEREAL: A 25.6-$μ$s/inf. Low-latency Event-driven Graph-neural-network Processor for High-resolution Vision at the Edge”，arXiv 分类为 cs.AR, cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17682",
+      "versioned_id": "2608.17682v1",
+      "title": "Differentiable Voronoi Ray Tracing Beyond Rasterization Speeds",
+      "authors": "Bernardo Taveira, Carl Lindström, Joakim Johnander, Fredrik Kahl",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T11:55:58Z",
+      "updated_at": "2026-08-18T11:55:58Z",
+      "categories": "cs.CV",
+      "abstract": "Real-time novel view synthesis is dominated by rasterized explicit primitives. These projection-based pipelines provide high throughput but require specialized extensions for non-pinhole effects such as distortion, rolling shutter, and depth of field. Ray-based rendering expresses these effects naturally but is generally assumed too slow for competitive real-time rendering. We analyze the factors governing throughput in differentiable Voronoi ray tracing and identify traversal length, per-cell work, and memory locality as principal determinants. Guided by this, we introduce VoroTracing, which co-designs the scene representation, optimization, and GPU execution to reduce these costs. Compact octahedral appearance textures reduce memory traffic, while surface-concentrated opacity promotes early termination. The fixed-budget representation is optimized without pruning or densification and rendered with a GPU implementation designed for coherent traversal. On Mip-NeRF 360, VoroTracing renders at 623 FPS on an RTX 5090, providing $3.2\\times$ the throughput of the fastest prior ray-based method and $2.8\\times$ that of 3D Gaussian Splatting, while maintaining competitive reconstruction quality. Our renderer supports fisheye, rolling-shutter, motion-blur, and depth-of-field effects through ray generation and sampling, requiring no specialized rasterization. These results show that real-time throughput can be achieved with the flexibility of ray-based rendering. We release our source code, see https://research.zenseact.com/publications/vorotracing",
+      "abs_url": "https://arxiv.org/abs/2608.17682",
+      "pdf_url": "https://arxiv.org/pdf/2608.17682v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Differentiable Voronoi Ray Tracing Beyond Rasterization Speeds”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17564",
+      "versioned_id": "2608.17564v1",
+      "title": "Where a New Concept Must Enter: Entry Point Gates Cross-Task Usability in Unified Multimodal Models",
+      "authors": "Zongyang Qiu, Yihan Wu, Kaixuan Fan, Bo Li, Hui Xiong",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T09:23:35Z",
+      "updated_at": "2026-08-18T09:23:35Z",
+      "categories": "cs.CV, cs.AI",
+      "abstract": "Unified multimodal models (UMMs) are motivated by the hope that understanding and generation reinforce each other but controlled ablations repeatedly find that adding a generation objective leaves understanding flat. Joint-training studies cannot settle the disagreement: with overlapping supervision, a gain cannot be attributed to the architecture rather than the data. To further investigate the relationship between the two directions in UMMs, we separate them by construction. A novel visual entity, a rendered 3D asset paired with a pseudo-word screened for absence from the frozen model's behavior, is bound through exactly one task direction, and the untrained direction is then measured. We find that the channel is real in both directions, but the directions differ in kind: generation training installs a name the model can only match among candidates; understanding training installs one it can also produce. What governs cross-task usability is where the binding enters the shared computation. An alignment probe predicts export across 36 configurations (Spearman $ρ= +0.68$). That objective's alignment term, maximized in closed form over activations with every weight frozen, makes a concept drawable when injected at layer 7 of 28 and is indistinguishable from the base model from layer 14 on, while the weight-based version of the same edit peaks at layers 10-14. In an observational series of four models, this window appears only where the understanding pathway is a semantic vision encoder, suggesting that unified weights are not enough: the two directions must share a semantic format at the entry point. Exploiting the rule, a mid-stack alignment objective acquires the concept for a $0.1\\%$ relative loss of the model's general text-to-image ability, against $41\\%$ for the standard generative route. Our code is at https://github.com/Zane-ZYQiu/entry-point-umm.",
+      "abs_url": "https://arxiv.org/abs/2608.17564",
+      "pdf_url": "https://arxiv.org/pdf/2608.17564v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Where a New Concept Must Enter: Entry Point Gates Cross-Task Usability in Unified Multimodal Models”，arXiv 分类为 cs.CV, cs.AI。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17561",
+      "versioned_id": "2608.17561v1",
+      "title": "Leveraging existing sparse point annotations for benthic imagery dense segmentation",
+      "authors": "Cesar Borja, Breck A. McCollum, Jarret E. Byrnes, Kenneth Sebens, Ana C. Murillo",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T09:22:31Z",
+      "updated_at": "2026-08-18T09:22:31Z",
+      "categories": "cs.CV, cs.LG",
+      "abstract": "The health of marine ecosystems is a critical indicator of global environmental change, yet the physical constraints of underwater observation and the intrinsic challenges of processing marine imagery severely limit the scalability of systematic monitoring. While recent visual foundation models such as the Segment Anything Model (SAM) series show great promise, they still struggle with the fine-grained recognition required in these complex scenarios and still require expert supervision. Our work addresses this gap by bridging state-of-the-art foundation models with existing sparse supervision. Because historical benthic surveys are typically annotated with only a few sparse expert points per image, we utilize these legacy point-labels as visual prompts for SAM2. Our primary contribution is a novel mechanism to automatically identify which of these points are suitable, and which are actively harmful, when used for propagation. By filtering out unreliable points, we extract high-quality pseudo-ground-truth masks capable of training more accurate, fine-grained semantic segmentation models. We demonstrate the effectiveness of our approach on public benthic data and introduce a new, challenging benchmark featuring real-world sparse expert annotations, paving the way for scalable ecological analysis.",
+      "abs_url": "https://arxiv.org/abs/2608.17561",
+      "pdf_url": "https://arxiv.org/pdf/2608.17561v1",
+      "source_query": "cat:cs.CV+AND+all:physical+AND+all:constraint",
+      "summary_cn": "这篇论文关注“Leveraging existing sparse point annotations for benthic imagery dense segmentation”，arXiv 分类为 cs.CV, cs.LG。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17535",
+      "versioned_id": "2608.17535v1",
+      "title": "GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting",
+      "authors": "Qijian Tian, Zimeng Wu, Xuhong Wang, Lizhuang Ma, Xin Tan",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T08:55:52Z",
+      "updated_at": "2026-08-18T08:55:52Z",
+      "categories": "cs.CV",
+      "abstract": "Simultaneously reconstructing and understanding 3D environments is essential for embodied agents. Toward this goal, feed-forward semantic 3D Gaussian Splatting (3DGS) efficiently constructs semantic scene representations from sparse multi-view observations. However, existing methods lack explicit instance discrimination and mainly support category- or phrase-based semantic queries. To this end, we propose GroupForward, an instance-grouped feed-forward Gaussian splatting model that reconstructs geometry, appearance, instance structure, and semantics from sparse, unposed, and uncalibrated multi-view images. Unlike existing methods that attach high-dimensional semantic features to each Gaussian, GroupForward learns compact instance embeddings that group Gaussians into cross-view consistent 3D instances, reformulating feed-forward semantic 3DGS from per-Gaussian semantic feature rendering to instance-level semantic aggregation and propagation. Building on these instance groups, we further propose a Referential Scene Reasoning Framework (RSRF) for complex 3D referring segmentation. RSRF constructs an instance-grouped 3D scene graph and retrieves candidate instances for a given referring expression. A vision-language model then reasons over structured instance evidence and multi-view observations to identify the referred instance among the candidates. RSRF thereby extends language interaction from simple semantic querying to complex referential scene reasoning. Experiments on semantic reconstruction and referential reasoning demonstrate the effectiveness of our instance-grouped reconstruction and reasoning framework.",
+      "abs_url": "https://arxiv.org/abs/2608.17535",
+      "pdf_url": "https://arxiv.org/pdf/2608.17535v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“GroupForward: Building Referable 3D Scenes via Instance-Grouped Feed-Forward Gaussian Splatting”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17447",
+      "versioned_id": "2608.17447v1",
+      "title": "NGS-Marker: Robust Native Watermarking for 3D Gaussian Splatting",
+      "authors": "Hao Qin, Yukai Sun, Luyuan Chen, Mengxu Lu, Feng Zhang, Ming Kong, Zhenhong Du, Qiang Zhu",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T07:28:18Z",
+      "updated_at": "2026-08-18T07:28:18Z",
+      "categories": "cs.CV",
+      "abstract": "With the rapid development and adoption of 3D Gaussian Splatting (3DGS), the need for effective copyright protection has become increasingly critical. Existing watermarking techniques for 3DGS mainly focus on protecting rendered images via pre-trained decoders, leaving the underlying 3D Gaussian primitives vulnerable to misuse. In particular, they are ineffective against Partial Infringement, where an adversary extracts and reuses only a subset of Gaussians. In this paper, we propose NGS-Marker, a novel native watermarking framework for 3DGS. It integrates a jointly trained watermark injector and message decoder, and employs a gradientbased progressive injection strategy to ensure full-scene coverage. This enables robust ownership decoding from any local region. We further extend NGS-Marker with hybrid protection (combining native and indirect watermarks) and support for multimodal watermarking. Extensive experiments demonstrate that NGS-Marker effectively defends against partial infringement while offering practical flexibility for real-world deployment.",
+      "abs_url": "https://arxiv.org/abs/2608.17447",
+      "pdf_url": "https://arxiv.org/pdf/2608.17447v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“NGS-Marker: Robust Native Watermarking for 3D Gaussian Splatting”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17425",
+      "versioned_id": "2608.17425v1",
+      "title": "GSToken: Geometry-Structured Gaussian Tokens for Compact 3D Medical Image Representation",
+      "authors": "Xiaoduo Li, Quan Gu",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T06:44:53Z",
+      "updated_at": "2026-08-18T06:44:53Z",
+      "categories": "cs.CV",
+      "abstract": "Effective segmentation of multi-modal MRI is central to improving neural network accuracy in brain tumor recognition. Existing methods typically compress 3D volumes into token sequences via fixed patch encoding or learned attention pooling (e.g., TokenLearner). However, these compression schemes discard explicit spatial shape information; the resulting tokens convey no notion of lesion morphology or spatial extent. Meanwhile, end-to-end evaluation entangles a tokenizer's information retention with the reconstruction capacity of the downstream decoder, and the lack of a unified capacity contract across methods makes performance differences difficult to attribute. In this paper, we introduce Gaussian tokens to multi-modal brain tumor segmentation for the first time: each token carries not only a semantic feature but also a learned 3D center, anisotropic scale, and orientation, endowing the representation with explicit geometric support at negligible parameter cost. We further propose a frozen-token utility evaluation protocol: the trained tokenizer is frozen, its output is cast into a fixed-capacity serialized contract, and a shared lightweight Transformer probe independently measures each tokenizer's retained information under strictly matched conditions. Multi-seed paired statistical testing shows that GSToken consistently and substantially outperforms capacity-matched adaptive baselines under frozen probing, with uniform advantages across all tumor sub-regions, surface, and distance metrics. These results demonstrate that explicitly encoding spatial geometry within tokens significantly improves the information density of volumetric representations, offering a new design principle for compact 3D medical image representation and downstream reading.",
+      "abs_url": "https://arxiv.org/abs/2608.17425",
+      "pdf_url": "https://arxiv.org/pdf/2608.17425v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "针对多模态MRI脑肿瘤分割中3D压缩易丢失空间形态信息的问题，论文提出GSToken，将语义特征与3D中心、各向异性尺度和方向结合为Gaussian tokens，并通过冻结token评测协议验证其信息保留能力。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17420",
+      "versioned_id": "2608.17420v1",
+      "title": "SPVC: Structured and Panoptic Video Fixing for Cross-Dataset Driving Scene Rendering",
+      "authors": "Gen Li, Shu Han, Yun Xi Qiao, Hua Chen, Xuyang Dai, Bohan Li, Hao Zhao, Chaojian Li",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T06:42:42Z",
+      "updated_at": "2026-08-18T06:42:42Z",
+      "categories": "cs.CV",
+      "abstract": "Driving scene reconstruction and rendering, especially with 3D Gaussian Splatting, has become an important component of autonomous driving simulation. However, rendered views often degrade under extrapolated ego trajectories and scene edits, producing blurry structures, temporal flicker, and foreground-background misalignment. Existing refinement methods are commonly designed for a specific setting, such as image-level novel-view repair or object-editing correction. In this paper, we introduce SPVC, a structured and panoptic video fixing framework for cross-dataset driving scene rendering. The name summarizes four design principles. (1) Structured fixing denotes the use of explicit spatial conditions, including camera pose, 3D bounding boxes, and HD maps, to guide the repair process and reduce uncontrolled hallucination. (2) Panoptic fixing refers to correcting both background rendering artifacts, such as distorted roads, buildings, and lanes, and foreground vehicle artifacts introduced by scene editing, such as inconsistent object appearance. (3) Video fixing means that the model operates on driving sequences rather than isolated frames, allowing temporal cues to be used during artifact correction. (4) Cross-dataset fixing means that a single shared network is trained and applied across multiple driving datasets, reducing the need for dataset-specific or scene-specific fixers. Concretely, we construct paired degraded-clean training data by simulating under-constrained 3DGS rendering and foreground vehicle insertion artifacts, and train a two-stage controllable video diffusion model that first addresses video-level appearance and then refines scene layout with structured controls.",
+      "abs_url": "https://arxiv.org/abs/2608.17420",
+      "pdf_url": "https://arxiv.org/pdf/2608.17420v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“SPVC: Structured and Panoptic Video Fixing for Cross-Dataset Driving Scene Rendering”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17389",
+      "versioned_id": "2608.17389v1",
+      "title": "GeoWeaver: Accurate Long-Sequence 3D Reconstruction via Hierarchical Geometric Assembly",
+      "authors": "Tinghao Jiang, Sheng Tang, Shengzhe Wei, Juntong Fang, Weiqi Zhang, Junsheng Zhou, Zesong Li",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T05:29:31Z",
+      "updated_at": "2026-08-18T05:29:31Z",
+      "categories": "cs.CV",
+      "abstract": "Long-sequence 3D reconstruction from RGB videos requires both accurate local geometry and globally consistent camera motion. Feed-forward models provide strong depth and pose predictions, but their memory cost prevents joint inference over long sequences. Chunk-wise processing improves scalability, yet independently predicted chunks often exhibit scale drift, pose errors, and point-cloud misalignment. We present GeoWeaver, a unified framework comprising a Geometric Prior Model (GPM) and Test-Time Adaptation (TTA). The GPM predicts chunk-wise depth, confidence, and camera parameters as adjustable geometric priors. TTA then performs sequential initialization, global chunk-level Sim(3) alignment, and coarse-to-fine refinement of camera poses, affine depth corrections, and intrinsics. Dense correspondences provide adjacent, cross-chunk, and long-range constraints, while a robust CDF-style objective jointly optimizes weighted 2D reprojection and 3D consistency residuals. This design preserves local geometric accuracy while correcting accumulated pose, scale, depth, and calibration errors. Experiments across diverse long-sequence benchmarks demonstrate improved camera accuracy, global consistency, and point-cloud quality. Ablations verify the contribution of each adaptation stage, and applying the same TTA procedure to different geometric prior models consistently improves their trajectory estimates, demonstrating that GeoWeaver is not tied to a specific GPM.",
+      "abs_url": "https://arxiv.org/abs/2608.17389",
+      "pdf_url": "https://arxiv.org/pdf/2608.17389v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "GeoWeaver旨在解决长序列RGB视频3D重建中的尺度漂移、位姿误差与点云错位问题。它结合Geometric Prior Model与Test-Time Adaptation，通过分块Sim(3)对齐和粗到细优化提升全局一致性。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17318",
+      "versioned_id": "2608.17318v1",
+      "title": "If, Then, Otherwise: Diagnosing Conditional Branching in Vision-Language Navigation",
+      "authors": "Seoyoung Lee, Neel P. Bhatt, Pranay Samineni, Cong Liu, S P Sharan, Timothy Barclay, Gregory M. Wagner, Daniel Milan, Sandeep Chinchali, Ufuk Topcu, Atlas Wang",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T03:22:29Z",
+      "updated_at": "2026-08-18T03:22:29Z",
+      "categories": "cs.CV, cs.RO",
+      "abstract": "Vision-language navigation agents are often evaluated on their ability to follow route-like instructions toward a fixed goal. Yet, real navigation instructions often depend on observed states of the environment: if a condition holds, then follow one path, otherwise take another. Such instructions require an agent to evaluate scene evidence, select the correct logical branch, and execute the corresponding navigation behavior. Existing evaluations provide limited control over conditional branch execution, making it difficult to determine whether agents fail because of perception, grounding, navigation, or logical decision-making. We introduce CondVLN, a scene-graph-grounded benchmark for diagnosing conditional branching in vision-language navigation. CondVLN programmatically generates instructions whose branch conditions are grounded in verifiable 3D scene-graph predicates, with controlled variation in branch depth, dependency chain length, spatial composition, evidence observability, and instruction horizon. CondVLN contains over 11,500 generated conditional instructions across AI2-THOR, Matterport3D, Gibson, and ReplicaCAD, and evaluates agents using standard VLN metrics and branch-specific diagnostics: Branch Selection Accuracy and Conditional Success Rate. Evaluating four state-of-the-art VLN agents (VLN-Zero, NaVid, NaVILA, and Open-Nav) shows that conditional branching exposes failures that are not captured by standard success rate or path length alone: agents can navigate plausibly while committing to a branch inconsistent with the observed scene condition. We also present a lightweight neurosymbolic branch-selection model that separates condition grounding from navigation execution, improving performance by 2x. CondVLN provides a reusable testbed for measuring whether embodied agents can not only follow instructions, but follow the right instruction under the right condition.",
+      "abs_url": "https://arxiv.org/abs/2608.17318",
+      "pdf_url": "https://arxiv.org/pdf/2608.17318v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“If, Then, Otherwise: Diagnosing Conditional Branching in Vision-Language Navigation”，arXiv 分类为 cs.CV, cs.RO。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17314",
+      "versioned_id": "2608.17314v1",
+      "title": "Scanline-Aware Animatable Gaussian Avatars from Rolling-Shutter Videos",
+      "authors": "Youxiang Wang",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T03:08:33Z",
+      "updated_at": "2026-08-18T03:08:33Z",
+      "categories": "cs.CV",
+      "abstract": "Animatable human avatars are routinely reconstructed from multi-view video under a silent assumption: that every pixel of a frame observes the same instant of the body's motion. Rolling-shutter (RS) sensors expose image rows sequentially, so within one frame the head and the feet of a moving person are separated by tens of milliseconds of articulated motion, and every scanline sees a different pose. Feeding such video to a state-of-the-art avatar bakes the distortion into the canonical representation, where it survives as shear and wobble under novel views and novel poses. Worse, every camera in a rig follows its own readout schedule, so the multi-view consistency that drives the reconstruction is violated even when the geometry is correct. We present RS-Avatar, which reconstructs a sharp, undistorted, animatable 3D Gaussian avatar directly from RS video. The formulation is minimal: a motion-aware avatar already renders the body at several sub-frame instants, and where a blur model averages those renderings, a rolling-shutter model composites them scanline by scanline. Changing that operator is the only modification required. On RS-ZJU, a benchmark we build from ZJU-MoCap, this improves novel-view synthesis over training as if the frames were instantaneous, on every subject. A motion-aware blur model built on the same sub-frame machinery does not transfer, and in fact falls below the shutter-oblivious baseline: the machinery is reusable, the operator is not.",
+      "abs_url": "https://arxiv.org/abs/2608.17314",
+      "pdf_url": "https://arxiv.org/pdf/2608.17314v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Scanline-Aware Animatable Gaussian Avatars from Rolling-Shutter Videos”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17298",
+      "versioned_id": "2608.17298v1",
+      "title": "3D Gaussian Accelerated Ray Tracing: Fast training through particle-based backward propagation",
+      "authors": "Laurent Vit, Oliver Batchelor, Richard Green",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T02:50:46Z",
+      "updated_at": "2026-08-18T02:50:46Z",
+      "categories": "cs.GR, cs.CV",
+      "abstract": "3D Gaussian Splatting has made Gaussian primitives a highly efficient representation for real-time novel view synthesis, but its rasterisation-based formulation relies on screen-space approximations that limit accurate view-dependent ordering and the integration of secondary ray effects such as reflections, refractions, and shadows. Gaussian ray tracing addresses these limitations by evaluating explicit ray-primitive intersections, yet it remains costly to train. We observe that the main bottleneck is not ray traversal alone, but the pixel-centric backward propagation, where many threads concurrently accumulate gradients into the same primitive parameters, causing severe atomic contention and thread serialisation. We present 3DGART, a practical training framework for ray-traced Gaussian rendering. Our key idea is to reorganise backward propagation around primitives rather than pixels. Using conservative perspective-correct screen-space bounds, we build a compact intermediate buffer and a tile-primitive mapping that allows each thread to accumulate the contribution of one primitive over its covered pixels within a tile. This transforms gradient computation from a contention-heavy scatter operation into a structured gather-like process. On Mip-NeRF 360, 3DGART achieves an $\\approx 3-3.5\\times$ raw training speedup over per-pixel baseline and $\\approx4 \\times$ over 3DGRT on Mip-NeRF 360 while improving quality. More importantly, 3DGART makes fully ray-traced Gaussian training practical, reaching runtimes competitive with rasterisation-based pipelines while preserving benefits of ray tracing.",
+      "abs_url": "https://arxiv.org/abs/2608.17298",
+      "pdf_url": "https://arxiv.org/pdf/2608.17298v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“3D Gaussian Accelerated Ray Tracing: Fast training through particle-based backward propagation”，arXiv 分类为 cs.GR, cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17291",
+      "versioned_id": "2608.17291v1",
+      "title": "B-Spline Embedded Structure Learning for 3D Tooth Segmentation",
+      "authors": "Xianghan Wei, Jianwen Lou, Zhiguo Lu, Hairong Jin, Haihua Zhu",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T02:43:49Z",
+      "updated_at": "2026-08-18T02:43:49Z",
+      "categories": "cs.CV",
+      "abstract": "Accurate 3D tooth segmentation forms the cornerstone of digital dentistry, yet it remains a formidable challenge due to the inherent intricacy of real-world dentitions, such as crowding, misaligned teeth and high morphological similarity between adjacent teeth. To resolve this, we present B-Spline Embedded Structure Learning, a novel framework that distills the inherent sequential arrangement of teeth into a continuous structural constraint to regularize representation space. Our approach parameterizes the global dental topology by fitting a parametric B-spline trajectory to tooth centers, assigning each point a continuous structural embedding that forces the shared backbone to capture global arch organization. To fully exploit these embedded priors, we introduce a Structure-Aware Dynamic Classifier (SADC) to substitute rigid static templates with adaptive, case-calibrated decision boundaries. SADC regularizes dynamic prototype pooling via a localized Gaussian proximity gate and contextually co-evolves them through an attention block modeling spatial relations and bilateral symmetries across teeth. Extensive evaluations on the 3DTeethSeg22 benchmark demonstrate that our method establishes a new state-of-the-art accuracy with exceptional structural robustness and efficiency in computational overhead, markedly enhancing the model's capacity to handle complex dental configurations.",
+      "abs_url": "https://arxiv.org/abs/2608.17291",
+      "pdf_url": "https://arxiv.org/pdf/2608.17291v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“B-Spline Embedded Structure Learning for 3D Tooth Segmentation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17283",
+      "versioned_id": "2608.17283v1",
+      "title": "UniQuery4R: Unified 4D Scene Reconstruction from a Single Query",
+      "authors": "Tiancheng Chen, Sheng Tang, Wenhua Jin, Weiqi Zhang, Juntong Fang, Junsheng Zhou, Zesong Li",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T02:26:38Z",
+      "updated_at": "2026-08-18T02:26:38Z",
+      "categories": "cs.CV",
+      "abstract": "Reconstructing dynamic 4D scenes requires jointly estimating correspondence, geometry, object motion, and camera motion. Existing feed-forward methods typically predict dense task-specific maps or independently process source-target pairs, leading to unnecessary computation for sparse queries and limited feature reuse across different frame pairs. We present UniQuery4R, a query-conditioned framework that encodes a multi-frame clip once and selects the source view, target view, and continuous source-image coordinate only at decoding time via source-to-target cross-attention. Each query jointly predicts target correspondence, target-time 3D position, and scene flow, along with source depth, while camera parameters are estimated per view. This design allows the encoded clip to be reused across arbitrary source-target selections and supports both sparse inference and dense reconstruction through batched queries, without learned temporal embeddings tied to a fixed clip length. We further introduce a direction-magnitude parameterization of scene flow with separate supervision for moving and static points. Among the evaluated methods, UniQuery4R achieves the best macro-average results on WorldTrack for both scene-flow estimation and dynamic-point reconstruction.",
+      "abs_url": "https://arxiv.org/abs/2608.17283",
+      "pdf_url": "https://arxiv.org/pdf/2608.17283v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "UniQuery4R针对动态4D场景重建，提出query-conditioned框架：一次编码多帧视频，通过cross-attention按需预测对应、3D位置、scene flow与深度。支持稀疏查询和稠密重建，并在WorldTrack上取得最佳宏平均性能。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17255",
+      "versioned_id": "2608.17255v1",
+      "title": "Learning Where and What to Lift for Bi-planar X-ray-to-CT Reconstruction",
+      "authors": "Yifei Wu, Yicheng Wu, Qiang Ma, Qi Chen, Renyang Gu, Xinyu Liu, Yongsheng Pan, Yong Xia",
+      "published_date": "2026-08-18",
+      "updated_date": "2026-08-18",
+      "published_at": "2026-08-18T01:23:36Z",
+      "updated_at": "2026-08-18T01:23:36Z",
+      "categories": "cs.CV, cs.AI",
+      "abstract": "X-ray imaging can be approximately modeled as the projection of an underlying volumetric attenuation field, with each measurement recording the accumulated attenuation along a corresponding ray path. Reconstructing a CT volume from only a few X-ray views is therefore severely ill-posed, as the projections collapse depth information and leave 3D locations of anatomical regions and their corresponding intensity distributions highly entangled and ambiguous. We observe that once the spatial organization of anatomical regions is established, estimating their CT intensities becomes substantially more tractable. Motivated by this, we propose LiftXR, an interleaved, geometry-guided framework that explicitly incorporates spatial layout recovery into CT reconstruction. Specifically, a layout lifter first generates a 3D anatomical layout from bi-planar X-rays, providing spatial guidance for an intensity renderer to reconstruct a CT volume. An anatomical parser then performs volumetric perception on the reconstruction, exploiting its spatially resolved boundary and intensity cues to recover a refined anatomical layout. This transition from projection-conditioned layout generation to reconstruction-conditioned anatomical perception allows the parsed layout to provide feedback for region-specific intensity calibration. Extensive experiments on two public datasets demonstrate that LiftXR consistently outperforms recent X-ray-to-CT reconstruction methods, establishing a new state of the art. Moreover, the reconstructed CT achieves superior performance in external downstream segmentation, indicating improved anatomical fidelity. Code will be released.",
+      "abs_url": "https://arxiv.org/abs/2608.17255",
+      "pdf_url": "https://arxiv.org/pdf/2608.17255v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“Learning Where and What to Lift for Bi-planar X-ray-to-CT Reconstruction”，arXiv 分类为 cs.CV, cs.AI。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17110",
+      "versioned_id": "2608.17110v1",
+      "title": "OV3D-Bench: A Diagnostic Benchmark for Open-Vocabulary Monocular 3D Detection",
+      "authors": "Mariia Gladkova, Neehar Peri, Ishan Khatri, Deva Ramanan, Daniel Cremers",
+      "published_date": "2026-08-17",
+      "updated_date": "2026-08-17",
+      "published_at": "2026-08-17T20:38:57Z",
+      "updated_at": "2026-08-17T20:38:57Z",
+      "categories": "cs.CV",
+      "abstract": "Open-vocabulary monocular 3D detectors report strong in-domain performance, but each evaluates under a different protocol, several rely on per-image category oracles unavailable at deployment, and all collapse geometry and semantics into a single AP metric. To address this, we introduce OV3D-Bench, a diagnostic benchmark that compares open-vocabulary monocular 3D detectors under deployment-realistic conditions across seven indoor and outdoor datasets. Our benchmark replaces the per-image class name oracle with test-time dataset-level class name prompts, and decouples detection accuracy along three axes: localization, semantic robustness, and cross-domain transfer. We evaluate seven representative detectors and find that (i) they localize objects well yet often mislabel a correctly localized box as a semantically adjacent category; (ii) accuracy is highly sensitive to prompt phrasing (e.g. WildDet3D's performance collapses from 18.6 to 5.4 AP when prompted with \"a detailed high-resolution photo of a car\" rather than \"car\"); and (iii) the widely adopted target-aware protocol hides these errors (e.g. inflating DetAny3D's AP by 1.9 $\\times$ on ScanNet). Lastly, we demonstrate that simply remapping a frozen closed-vocabulary detector's predictions using a contrastive vision-language encoder such as SigLIPv2 performs competitively against recent purpose-built open-vocabulary methods. This indicates that geometric localization is more mature, while open-vocabulary semantics remains the primary bottleneck.",
+      "abs_url": "https://arxiv.org/abs/2608.17110",
+      "pdf_url": "https://arxiv.org/pdf/2608.17110v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "这篇论文关注“OV3D-Bench: A Diagnostic Benchmark for Open-Vocabulary Monocular 3D Detection”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
+      "arxiv_id": "2608.17044",
+      "versioned_id": "2608.17044v1",
+      "title": "The 10th AI City Challenge",
+      "authors": "Zheng Tang, Shuo Wang, David C. Anastasiu, Ming-Ching Chang, Anuj Sharma, Quan Kong, Munkhjargal Gochoo, Jun-Wei Hsieh, Tomasz Kornuta, Zhedong Zheng, Renran Tian, Judah Goldfeder, Fulgencio Navarro, Yuxing Wang, Yizhou Wang, Sameer Satish Pusegaonkar, Anqi Li, Nalin Dadhich, Ridham Kachhadiya, Dhanishtha Patil, Haoquan Liang, Jiajun Li, Han Zhang, Yilin Zhao, Zaid Pervaiz Bhat, Shuyu Yang, Ashutosh Kumar, Rong Wang, Rafael Martin Nieto, Peter Christiansen, Ahmed Abduljawad, Mohanrasu Shanmugam, Nadeem Shaik, Sujit Biswas, Xunlei Wu, Vidya Murali, Rama Chellappa",
+      "published_date": "2026-08-17",
+      "updated_date": "2026-08-17",
+      "published_at": "2026-08-17T18:42:49Z",
+      "updated_at": "2026-08-17T18:42:49Z",
+      "categories": "cs.CV, cs.AI",
+      "abstract": "The 10th AI City Challenge, held with ECCV 2026, marks a decade of community benchmarking for intelligent transportation, smart cities, and physical AI. Since its 2017 start with vehicle detection, classification, and tracking, the challenge has grown into a broad benchmark suite for multi-camera perception, multimodal reasoning, synthetic-to-real learning, generative forecasting, and privacy-preserving evaluation. The 2026 edition continued this growth with 325 registered teams, up from 245 in 2025, and participation from 26 countries and regions, up from 15. Its six primary tracks cover multi-camera 3D perception, transportation safety captioning and VQA, traffic anomaly reasoning, text-based person anomaly search, generative traffic video forecasting, and cross-city object detection. Track 3 further includes two out-of-domain leaderboards, submitted as Tracks 7 and 8, for fisheye traffic-violation understanding and pedestrian situated-intent VQA. This paper summarizes the challenge setup, datasets, evaluation protocols, leaderboard results, and workshop papers. Across tracks, successful systems combine foundation models with geometric grounding, retrieval or reranking, synthetic-data design, domain adaptation, and controlled inference.",
+      "abs_url": "https://arxiv.org/abs/2608.17044",
+      "pdf_url": "https://arxiv.org/pdf/2608.17044v1",
+      "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
+      "summary_cn": "",
+      "affiliations": "",
+      "crawled_date": "2026-08-20",
+      "last_seen_date": "2026-08-20"
+    },
+    {
       "arxiv_id": "2608.16863",
       "versioned_id": "2608.16863v1",
       "title": "SplatGuide: Geometric Priors from 3D Gaussians for Pose-Free Novel View Synthesis",
@@ -17,7 +511,7 @@
       "summary_cn": "这篇论文关注“SplatGuide: Geometric Priors from 3D Gaussians for Pose-Free Novel View Synthesis”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16725",
@@ -36,7 +530,7 @@
       "summary_cn": "这篇论文关注“Unsupervised Anomaly Detection for Image Dataset Quality Assurance in Multi-Center Breast MRI”，arXiv 分类为 cs.CV, cs.AI。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16673",
@@ -55,7 +549,7 @@
       "summary_cn": "论文研究LiDAR点云语义分割中的类别不平衡问题。通过在三个数据集、KPConv与RandLA-Net上比较多种重加权方案和损失函数，揭示采样策略与数据特性对缓解效果的影响。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16600",
@@ -74,7 +568,7 @@
       "summary_cn": "GeoPose解决DSA与CTA的快速3D-to-2D配准问题。它通过projection-space calibration和变换组合，将population-trained模型预测的C-arm位姿迁移至未见CTA，实现无需患者特异训练的快速配准。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16535",
@@ -93,7 +587,7 @@
       "summary_cn": "这篇论文关注“Automatic Cephalometric Landmark Localization on CBCT-Derived Digitally Reconstructed Radiographs for Skeletal Malocclusion Classification”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16499",
@@ -112,7 +606,7 @@
       "summary_cn": "针对有限帧预算下主动3D Gaussian重建易忽略物体遮挡区域的问题，提出OccamView。该方法利用RGB-D检测建立物体记忆和隐藏区域代理，并以遮挡感知评分与Geo-Floor机制选择视点。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16490",
@@ -131,7 +625,7 @@
       "summary_cn": "这篇论文关注“Towards Real-Time and Adaptable LiDAR Scene Completion”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16484",
@@ -150,7 +644,7 @@
       "summary_cn": "这篇论文关注“Remote-Sensing City Layout Extraction with MLLM”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16480",
@@ -169,7 +663,7 @@
       "summary_cn": "论文提出RISE框架，结合SAM3视频身份与标定引导的多视角关联，实现无需LiDAR或专门3D训练的3D tracking。  \n同时构建RISE-VQA数据集与RISE-Bench，评估道路场景中的结构化vision-language reasoning。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16463",
@@ -188,7 +682,7 @@
       "summary_cn": "针对稀疏视角光谱CT的角度欠采样与光谱耦合问题，论文提出4D-SG：学习共享Gaussian几何，并用GSC-Net预测光谱密度变化，实现连续4D表示和未观测能道查询。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16324",
@@ -207,7 +701,7 @@
       "summary_cn": "LaGSplat旨在从单目视频推断受物理规律支配的刚性或可变形物体交互动力学。它将低维潜在状态作为耗散Lagrangian的广义坐标和Gaussian Splatting解码器条件，实现未见外力下的实时交互与渲染。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16241",
@@ -226,7 +720,7 @@
       "summary_cn": "这篇论文关注“Convolution-Free Holistic Multivariance Decomposition Layer for Efficient Hyperspectral Image Classification Tensor Networks”，arXiv 分类为 cs.CV, cs.LG, math.OC。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16234",
@@ -245,7 +739,7 @@
       "summary_cn": "这篇论文关注“GaussianDWM++: Language-Grounded 3D Gaussian Driving World Model for Unified Scene Understanding, Editing, and Multi-Modal Generation”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16225",
@@ -264,7 +758,7 @@
       "summary_cn": "针对标准Transformer在复杂点云场景密集预测中先验不足的问题，提出PCT-Prompt。该框架引入prompt-guided特征分支，结合多尺度几何特征、PnP-3D、cross-attention与prompt drop，提升模型适应性。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16143",
@@ -283,7 +777,7 @@
       "summary_cn": "这篇论文关注“AnyTalk: Speech Animation for Arbitrary Characters Leveraging a Video Generation Model”，arXiv 分类为 cs.GR, cs.CV, cs.MM, cs.SD。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16103",
@@ -302,7 +796,7 @@
       "summary_cn": "论文针对 3D Gaussian Splatting 中开放词汇 referring segmentation 对属性、空间关系和细粒度部件理解不足的问题，提出 QAGaussian。该方法结合 query-conditioned Gaussian slots、relation-aware slot graph 与 granularity-adaptive routing，提升语言引导的 Gaussian primitive 选择性能。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16042",
@@ -321,7 +815,7 @@
       "summary_cn": "这篇论文关注“TR-GS: High-Fidelity Sparse-View CT Volumetric Rendering via t-Distribution Gaussian Splatting and Ray-Confidence Modeling”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16011",
@@ -340,7 +834,7 @@
       "summary_cn": "这篇论文关注“ReRef-3D: A Benchmark for Spatial Referring Expression-Guided 3D Scene Rearrangement”，arXiv 分类为 cs.CL, cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.16008",
@@ -359,7 +853,7 @@
       "summary_cn": "这篇论文关注“Spatial Temporal Synergy: Balancing Change and Invariance in Text Driven 3D Human Motion Editing”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.15984",
@@ -378,7 +872,7 @@
       "summary_cn": "这篇论文关注“A Plug-and-Play 2D Motion Interface for Real-World Motion Language Models”，arXiv 分类为 cs.CV。详细贡献请查看英文摘要和论文原文。",
       "affiliations": "",
       "crawled_date": "2026-08-19",
-      "last_seen_date": "2026-08-19"
+      "last_seen_date": "2026-08-20"
     },
     {
       "arxiv_id": "2608.15818",
