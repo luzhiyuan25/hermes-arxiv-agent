@@ -17,7 +17,7 @@
       "summary_cn": "论文针对多人图像生成中身份保持及人物—位置对应不稳定的问题，提出 WithEveryone：以 addressed token 注入身份，预测身份—布局计划并作为视觉条件生成。其 Layout-Grounded ID Loss 与 ID Representation Forcing 支持最多10个身份，减少复制粘贴伪影。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20335",
@@ -36,7 +36,7 @@
       "summary_cn": "4DAnyone旨在从未标定单目视频重建4D人体。通过生成多视角一致视频并结合Reference Context Packing与Target Context Routing，将其提升为4D Gaussian Splatting。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20312",
@@ -55,7 +55,7 @@
       "summary_cn": "Inter-X++旨在解决人-人交互（HHI）数据保真度低、手势与多模态标注不足及评测不统一的问题。论文构建大规模基准并提出统一框架OpenHHI，支持交互生成与感知评测。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20308",
@@ -74,7 +74,7 @@
       "summary_cn": "DreamHand针对第一视角视频中手部遮挡与出视导致的度量级3D轨迹恢复难题，将视频扩散模型改造为确定性几何编码器。结合双向时空解码器，实现无需外部检测器的连续双手运动恢复，并支持免测试时相机内参配置。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20305",
@@ -93,7 +93,7 @@
       "summary_cn": "针对单层堆叠LGE-CMR中低对比度、弥漫及小范围心肌瘢痕分割难题，提出CalcSeg，结合置信度感知的动态半监督课程学习与切片间自注意力，从稀疏2D图像融合3D空间信息，实现稳健分割。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20212",
@@ -112,7 +112,7 @@
       "summary_cn": "论文针对视频眼镜去除中的折射畸变、反光与身份漂移问题，结合生成模型合成数据和物理镜片模拟训练JFSnet。该方法融合DINOv2语义特征与卷积解码器，提升身份、时序稳定性和细节保真度。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20107",
@@ -131,7 +131,7 @@
       "summary_cn": "论文提出 BeyondMasks 基准，将视频物体移除视为因果场景一致性问题，评估阴影、反射等物理后效应。并提出基于视觉语言模型的 CORE 评测协议。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20093",
@@ -150,7 +150,7 @@
       "summary_cn": "HandMvNet面向多视角图像的实时3D手部姿态与形状估计，利用multi-view cross-attention fusion融合多视角特征。该方法无需输入相机参数，缓解尺度-深度歧义，并降低推理时间。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.20000",
@@ -169,7 +169,7 @@
       "summary_cn": "论文针对已知光照下的稀疏视角3D重建，提出基于带不透明度 beta surfels 的可微点渲染与光传输优化。实验中仅用267个surfel，Chamfer距离较最强点基线降低28.5%。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19987",
@@ -188,7 +188,7 @@
       "summary_cn": "",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19973",
@@ -207,7 +207,7 @@
       "summary_cn": "论文针对开放词汇3D目标检测中新物体发现定位不准、分类不匹配问题，提出Co-Distillation Discovery与Dual Guidance Robust Training。通过Hungarian matching筛选高质量目标，并结合场景感知不确定性正则化和LLM引导的层次对齐提升训练鲁棒性。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19968",
@@ -226,7 +226,7 @@
       "summary_cn": "论文针对渐进式装配中仅识别物体不足的问题，提出PVRA：基于3D关键点投票的模块化学习框架，从RGB-D场景学习装配依赖并预测可执行输出。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19965",
@@ -242,10 +242,10 @@
       "abs_url": "https://arxiv.org/abs/2608.19965",
       "pdf_url": "https://arxiv.org/pdf/2608.19965v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对3D医学图像中曲线状解剖结构分割难题，提出基于Flow Matching的3D-CurvSegFlow，通过连续变换渐进重建血管几何，实现高效推理，并在三类数据集上展现良好泛化性。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19900",
@@ -264,7 +264,7 @@
       "summary_cn": "论文提出 AvatarDynamizer，将静态3D人体化身转为可控、逼真且多视角一致的动态4D化身。方法在纹理空间编码姿态相关动态，结合视频扩散模型生成动态纹理，并解码为3D Gaussians进行渲染。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19769",
@@ -283,7 +283,7 @@
       "summary_cn": "论文针对不同成像模态和卒中阶段的急性缺血性卒中病灶分割，提出兼容nnU-Net的两阶段3D方法：校正头部倾斜，并通过跨半球对称性与AsymFeX提取不对称特征。在AISD及其他数据集上验证了性能与泛化性。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19738",
@@ -302,7 +302,7 @@
       "summary_cn": "论文旨在从单个舒张末期（ED）心室网格合成完整心动周期的双心室运动。作者提出融合运动分区与表型条件化 latent flow 的区域自适应框架，并提升了几何精度与功能保真度。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19726",
@@ -321,7 +321,7 @@
       "summary_cn": "论文探讨适配新模态时是否必须微调MLLM骨干。3D MLLM实验表明，仅训练projector即可获得强性能、避免语言能力漂移，并使训练吞吐量约提升一倍。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19719",
@@ -340,7 +340,7 @@
       "summary_cn": "论文提出无风格编码器的扩散风格化框架SEFS：从单张图像的随机低分辨率裁剪构造style tokens，结合边缘/分割条件、重归一化与跨块跳连，实现无需配对数据的reference-based stylization。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19639",
@@ -359,7 +359,7 @@
       "summary_cn": "针对资源受限 Edge-IoT 设备上 Free-Viewpoint Video 重建慢、存储开销大的问题，论文提出 S²GS，利用结构感知时空稀疏性、流式八叉树和门控机制，仅更新 Gaussian residuals，在保持视觉质量的同时提升效率。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19567",
@@ -378,7 +378,7 @@
       "summary_cn": "论文提出 Block3D，一种 block-wise diffusion 框架，将离散形状 token 分块生成，并在块内联合去噪。结合 confidence-guided intra-block correction，在保持几何保真度的同时，将生成速度提升 5.15 倍。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19556",
@@ -397,7 +397,7 @@
       "summary_cn": "针对流式自回归扩散视频模型长时生成中的几何漂移与运动退化问题，Stream4D以动态4D重建奖励替代静态Gaussian Splatting critic，并加入运动先验和感知锚点，提升时空一致性与自然运动。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
-      "last_seen_date": "2026-08-22"
+      "last_seen_date": "2026-08-23"
     },
     {
       "arxiv_id": "2608.19177",
@@ -527,7 +527,7 @@
       "abs_url": "https://arxiv.org/abs/2608.18734",
       "pdf_url": "https://arxiv.org/pdf/2608.18734v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对动态场景中空间结构与运动演化难以联合理解的问题，提出基于对比学习的4D视觉编码器CL4D，直接对齐动态点云与自然语言。进一步构建4DVLM和DynAction4D数据集，支持zero-shot motion-to-text/text-to-motion检索及4D视觉语言任务。",
       "affiliations": "",
       "crawled_date": "2026-08-21",
       "last_seen_date": "2026-08-22"
