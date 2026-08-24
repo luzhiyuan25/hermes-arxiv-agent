@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T07:36:02+08:00",
+  "generated_at": "2026-08-25T07:35:21+08:00",
   "timezone": "Asia/Shanghai",
   "count": 370,
   "new_count": 0,
@@ -193,7 +193,7 @@
       "abs_url": "https://arxiv.org/abs/2608.19987",
       "pdf_url": "https://arxiv.org/pdf/2608.19987v1",
       "source_query": "cat:cs.CV+AND+all:physically+AND+all:plausible",
-      "summary_cn": "",
+      "summary_cn": "论文提出STEP，用PCA将骨架序列映射至紧凑白化PC-space，结合DSM训练Energy-Based Model并利用置信度加权。该方法支持更长时序，实时检测异常动作，并在UBnormal上达到90.1% AUROC。",
       "affiliations": "",
       "crawled_date": "2026-08-22",
       "last_seen_date": "2026-08-23"
