@@ -17,7 +17,7 @@
       "summary_cn": "论文针对部分观测及强非等距变形下的3D形状对应难题，提出基于Transformer的TokenMatch。方法利用曲率引导的patch token化及自/交叉注意力学习对应关系，并能从部分形状泛化至完整形状。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.04201",
@@ -36,7 +36,7 @@
       "summary_cn": "针对在线3D重建在长视频中因固定首帧锚定导致位姿漂移和几何崩溃的问题，论文提出 Scal3R，以多参考帧相对位姿查询、轻量可学习token及带回环的在线位姿图优化抑制长程漂移，并在多个数据集取得SOTA。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.04196",
@@ -55,7 +55,7 @@
       "summary_cn": "论文提出Puffin-World，将物理理解、空间模拟与3D世界生成/重建统一，原生建模物理、几何、外观状态及Omni-Camera表示。配套Puffin-16M数据集，支持物理一致的未来视图生成与闭环3D交互。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.04174",
@@ -74,7 +74,7 @@
       "summary_cn": "论文研究如何利用3D Foundation Models的内部表示，从新视角推断隐藏表面。提出Z3D，通过潜空间扩散预测未见视角的pointmaps和逼真深度图。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.04120",
@@ -93,7 +93,7 @@
       "summary_cn": "BooM-VVT针对视频虚拟试穿中依赖掩码、服装一致性不足等问题，提出利用图像级伪数据的无掩码、多阶段训练框架。该方法结合服装敏感关键帧采样、Frame-Shared 3D-RoPE及OmniView数据集，提升视频时序一致性与服装细节保真度。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.04070",
@@ -112,7 +112,7 @@
       "summary_cn": "论文提出LaPla，一种Vision-Language-Action框架，通过latent-aligned planning将离散语义对齐至连续驾驶动作。其利用残差VQ-VAE编码轨迹并直接预测连续潜变量，减少量化误差与推理延迟，在nuScenes和AlpaSim上表现良好。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.04026",
@@ -131,7 +131,7 @@
       "summary_cn": "论文针对丰富几何结构导致的Bundle Adjustment计算开销大、数值不稳定问题，提出统一优化框架，将高阶关系转化为2D重投影约束。该方法保持稀疏性，并提升3D结构精度。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03956",
@@ -150,7 +150,7 @@
       "summary_cn": "论文提出RARF，一种区域感知的rectified flow框架，用于脑部MRI病灶区域的健康组织重建。方法仅在待修复区域生成，并固定已观测体素，结合masked flow matching与重建一致性训练，实现解剖一致的3D MRI inpainting。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03931",
@@ -169,7 +169,7 @@
       "summary_cn": "论文提出SPAR3S，从稀疏多视图生成完整3D场景。方法结合Gaussian Splatting与masked autoregressive transformer，在无需3D标注下预测未观测区域。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03919",
@@ -188,7 +188,7 @@
       "summary_cn": "OctWorld旨在解决长距离相机轨迹下视频生成的空间一致性问题。其通过持久3D记忆OctMap融合观测与深度，利用动态稀疏八叉树和TSDF生成可探索、世界一致的视频。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03897",
@@ -204,10 +204,10 @@
       "abs_url": "https://arxiv.org/abs/2609.03897",
       "pdf_url": "https://arxiv.org/pdf/2609.03897v1",
       "source_query": "cat:cs.GR+AND+all:Gaussian+AND+all:Splatting",
-      "summary_cn": "",
+      "summary_cn": "本文提出面向 3D Gaussian Splatting 的实时调色框架，通过重参数化预训练球谐函数，实现基于 palette 的 recoloring、独立明度调整及像素级约束。 edits 可在数十毫秒完成，并兼容标准查看器。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03895",
@@ -226,7 +226,7 @@
       "summary_cn": "针对粉尘影响自主农业机械传感器与算法性能的问题，论文提出由室内外区域组成的传感器测试场概念，支持可控及真实农作业条件下的可重复测试，并进行3D可视化。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03892",
@@ -245,7 +245,7 @@
       "summary_cn": "GraFT针对MLLMs 3D空间推理不可靠问题，提出无需训练的3D场景图框架。通过符号几何工具、BEV渲染和第一视角图像，增强测量、视角转换与属性定位能力。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03824",
@@ -264,7 +264,7 @@
       "summary_cn": "针对单目3D foundation models难以预测绝对尺度的问题，论文提出VI3，利用IMU预积分获得度量运动参考，为预训练3DFM恢复metric scale，无需真值监督并保持几何一致性。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03773",
@@ -283,7 +283,7 @@
       "summary_cn": "论文提出 RealCADBench，面向真实工业设计意图评测参数化 CAD 建模，覆盖文本、工程图和产品图等输入。通过执行 FreeCAD API Python 并结合可执行性、IoU 及视觉语义指标，揭示现有模型的差异与局限。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03756",
@@ -302,7 +302,7 @@
       "summary_cn": "ENEAS旨在解决文本提示分割中的时序幻觉、空间碎片化和语义误判。它结合文本适配的SeC时序记忆架构、视觉嵌入匹配与条件VLM验证，实现鲁棒实例跟踪和开放概念发现。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03729",
@@ -321,7 +321,7 @@
       "summary_cn": "论文针对VLMs空间推理受2D投影限制的问题，提出FactoSR，将推理分解为平面对应、深度一致性和时间可逆性，并通过强化学习优化，在多视角与视频基准上提升3D/4D推理性能。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03694",
@@ -340,7 +340,7 @@
       "summary_cn": "针对稀疏观测下INR形状补全易产生不合理几何的问题，提出面向观测条件的latent energy prior。其与L2先验结合，在冻结解码器上提升了补全效果。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03690",
@@ -359,7 +359,7 @@
       "summary_cn": "论文针对全身PET/CT中代谢功能与解剖结构联合理解不足，提出MetaStructAtlas数据集及MetaStructVQA基准，含多模态标注与10万余问答对，用于评估3D医学视觉语言模型的整体推理能力。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03657",
@@ -378,7 +378,7 @@
       "summary_cn": "针对稀疏视角下 NeRF 和 3D Gaussian Splatting 的伪影问题，论文提出无需优化的 3D Morphological Perturbations，通过扰动 3DGS 高斯的尺度、旋转和剪枝保持跨视角一致性。该方法无需逐场景重建，降低深度误差 12.5%。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03639",
@@ -394,10 +394,10 @@
       "abs_url": "https://arxiv.org/abs/2609.03639",
       "pdf_url": "https://arxiv.org/pdf/2609.03639v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文解决单图像 camera-controlled novel view synthesis 在大幅相机运动和长序列生成中的不稳定问题。CamTrol++ 将相机运动分解为小步自回归更新，并结合几何约束注意力等设计，无需重训即可提升生成稳定性与3D重建质量。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03613",
@@ -416,7 +416,7 @@
       "summary_cn": "TileGS针对3D Gaussian Splatting栅格化中全局排序导致的遍历与属性传输开销，提出tile-local depth binning，将长tile范围划分为深度局部范围并选择性修正排序，实现更快渲染且保持输出质量。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03534",
@@ -435,7 +435,7 @@
       "summary_cn": "针对3D Gaussian Splatting中梯度消失导致重建不佳的问题，论文提出分段截断梯度更新，提升优化稳定性及对初始化的鲁棒性，并验证其在静态、动态场景中的效果。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03447",
@@ -454,7 +454,7 @@
       "summary_cn": "论文针对大规模航拍表面重建中的分区断裂、局部几何约束不足和正则化不适应问题，提出STARS-GS。该方法结合结构感知分区、邻域Gaussian组织与自适应表面正则化，提升重建精度和完整性。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03415",
@@ -473,7 +473,7 @@
       "summary_cn": "针对印度古典舞双手互动手势数据稀缺、文本描述不精确的问题，论文提出条件扩散框架 MudraGen。通过3D关键点、双手关节偏移和形状一致性等几何监督，生成姿态准确、解剖合理的 Samyukta Hasta Mudras 图像。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03349",
@@ -492,7 +492,7 @@
       "summary_cn": "论文针对点表示在大幅非刚性形变下易产生孔洞和表面不连续的问题，提出自监督表面一致性方法P-CORE。通过随机形变约束形变前后表面预测一致，提升zero-shot 3D editing的鲁棒性并减少伪影。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03341",
@@ -511,7 +511,7 @@
       "summary_cn": "论文提出 PointGT，一种支持几何与外观同步编辑的 point-based 3D 表示。它结合适合形变的点表示与 learned UV mapping，实现高分辨率 texture editing，兼容 Gaussian Splatting 的 geometry editing。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03334",
@@ -530,7 +530,7 @@
       "summary_cn": "针对3D Gaussian Splatting训练中高斯基元增长导致开销大、收敛慢的问题，论文提出Laplacian Frequency Hierarchies，结合Laplacian分解与粗到细的频率分阶段训练，减少活跃高斯并加速训练。可与Taming-3DGS、FastGS结合。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
-      "last_seen_date": "2026-09-05"
+      "last_seen_date": "2026-09-06"
     },
     {
       "arxiv_id": "2609.03199",
@@ -831,7 +831,7 @@
       "abs_url": "https://arxiv.org/abs/2609.02288",
       "pdf_url": "https://arxiv.org/pdf/2609.02288v1",
       "source_query": "cat:cs.CV+AND+all:3D+AND+all:vision",
-      "summary_cn": "",
+      "summary_cn": "论文针对dMRI联合k-q重建中空间与扩散方向信息利用不足，提出subject-specific spatial-angular Gaussian field。通过共享3D Gaussian primitives和q-conditioned tensor-residual进行自监督重建，提升缺失方向DWI及扩散指标估计。",
       "affiliations": "",
       "crawled_date": "2026-09-05",
       "last_seen_date": "2026-09-05"
